@@ -1,0 +1,252 @@
+{
+  "inventories": {
+    "main": {
+      "inventoryName": "&dOsiągnięcia",
+      "inventorySize": 27,
+      "elements": {
+        "kills": {
+          "name": "&eRANKING",
+          "data": 2,
+          "amount": 1,
+          "material": "SKULL_ITEM",
+          "slot": 12,
+          "_guiElementType": "pl.rosehc.controller.wrapper.achievements.AchievementsTypePreviewGuiElementWrapper"
+        },
+        "points": {
+          "name": "&eRANKING",
+          "data": 0,
+          "amount": 1,
+          "material": "NETHER_STAR",
+          "slot": 11,
+          "_guiElementType": "pl.rosehc.controller.wrapper.achievements.AchievementsTypePreviewGuiElementWrapper"
+        },
+        "killstreak": {
+          "name": "&eRANKING",
+          "data": 2,
+          "amount": 1,
+          "material": "SKULL_ITEM",
+          "slot": 12,
+          "_guiElementType": "pl.rosehc.controller.wrapper.achievements.AchievementsTypePreviewGuiElementWrapper"
+        },
+        "mining_level": {
+          "name": "&5LEVEL KOPANIA",
+          "data": 0,
+          "amount": 1,
+          "material": "DIAMOND_PICKAXE",
+          "slot": 13,
+          "_guiElementType": "pl.rosehc.controller.wrapper.achievements.AchievementsTypePreviewGuiElementWrapper"
+        },
+        "spend_time": {
+          "name": "&9SPĘDZONY CZAS",
+          "data": 0,
+          "amount": 1,
+          "material": "WATCH",
+          "slot": 14,
+          "_guiElementType": "pl.rosehc.controller.wrapper.achievements.AchievementsTypePreviewGuiElementWrapper"
+        },
+        "eaten_golden_heads": {
+          "name": "&6ZJEDZONE GHEADY",
+          "data": 0,
+          "amount": 1,
+          "material": "GHEAD",
+          "slot": 15,
+          "_guiElementType": "pl.rosehc.controller.wrapper.achievements.AchievementsTypePreviewGuiElementWrapper"
+        },
+        "traveled_kilometers": {
+          "name": "&dPRZEBIEGNIĘTE KILOMETRY",
+          "data": 0,
+          "amount": 1,
+          "material": "COMPASS",
+          "slot": 16,
+          "_guiElementType": "pl.rosehc.controller.wrapper.achievements.AchievementsTypePreviewGuiElementWrapper"
+        },
+        "opened_magic_cases": {
+          "name": "&dPRZEBIEGNIĘTE KILOMETRY",
+          "data": 0,
+          "amount": 1,
+          "material": "MAGIC_CASE",
+          "slot": 22,
+          "_guiElementType": "pl.rosehc.controller.wrapper.achievements.AchievementsTypePreviewGuiElementWrapper"
+        }
+      },
+      "fillElement": {
+        "name": "&8#",
+        "data": 15,
+        "amount": 1,
+        "material": "STAINED_GLASS_PANE",
+        "slot": 0,
+        "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+      }
+    },
+    "user_profile": {
+      "inventorySize": 0,
+      "elements": {
+        "all_statistics": {
+          "name": "&5Wszystkie statystyki",
+          "lore": [
+            "&7Zabójstwa: &d{KILLS}",
+            "&7Śmierci: &d{DEATHS}",
+            "&7Kill Streak: &d{KILL_STREAK}",
+            "&7KD Ratio: &d{KDR}",
+            "&7Spędzony czas na serwerze: &d{SPEND_TIME}",
+            "&7Level kopania: &d{MINING_LEVEL}"
+          ],
+          "data": 0,
+          "amount": 1,
+          "material": "CURRENT_PLAYER_HEAD",
+          "slot": 11,
+          "_guiElementType": "pl.rosehc.controller.wrapper.achievements.AchievementsUserProfileAllStatisticsGuiElementWrapper"
+        },
+        "current_guild": {
+          "name": "&cAktualna gildia",
+          "lore": [
+            "&7Tag aktualnej gildii: &a{TAG}",
+            "&7Nazwa aktualnej gildii: &a{NAME}"
+          ],
+          "skinValue": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTZmYjliM2UzZjY1MGI3YjI1OGMwNGZmY2I4NWMxYjVkY2FjOTJiODFlNTJkOTkyYzUxMjRiNjcwZmU4ZDYifX19",
+          "skinSignature": "",
+          "data": 0,
+          "amount": 1,
+          "material": "SKULL_ITEM",
+          "slot": 15,
+          "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+        },
+        "all_boosts": {
+          "name": "&eWszystkie boosty",
+          "lore": [
+            "&7Dodatkowy ranking: &d{ADDITIONAL_RANKING}",
+            "&7Mniejsza strata rankingu: &d{LESS_RANKING_LOSS}",
+            "&7Dodatkowa szansa do dropu: &d{ADDITIONAL_DROP_CHANCE}"
+          ],
+          "data": 8265,
+          "amount": 1,
+          "material": "POTION",
+          "slot": 13,
+          "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+        }
+      },
+      "fillElement": {
+        "name": "&8#",
+        "data": 15,
+        "amount": 1,
+        "material": "STAINED_GLASS_PANE",
+        "slot": 0,
+        "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+      }
+    },
+    "eaten_golden_heads": {
+      "inventoryName": "&dOsiągnięcia: ZJEDZONE GHEADY",
+      "inventorySize": 27,
+      "elements": {
+        "level1": {
+          "name": "&6ZJEDZONE GHEADY #1",
+          "lore": [
+            "&7Czy odebrałeś: &r{RECEIVED}",
+            "&7Progres: &d{CURRENT_STATISTIC}/{MAX_STATISTIC} &8(&r{PROGRESS_BAR}&8)",
+            "&aKliknij, aby odebrać nagrodę!"
+          ],
+          "data": 0,
+          "amount": 1,
+          "material": "GHEAD",
+          "slot": 14,
+          "_guiElementType": "pl.rosehc.controller.wrapper.achievements.AchievementsAchievementPreviewGuiElementWrapper"
+        },
+        "back": {
+          "name": "&cKliknij, aby powrócić do menu głównego!",
+          "data": 0,
+          "amount": 1,
+          "material": "BARRIER",
+          "slot": 26,
+          "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+        }
+      },
+      "fillElement": {
+        "name": "&8#",
+        "data": 15,
+        "amount": 1,
+        "material": "STAINED_GLASS_PANE",
+        "slot": 0,
+        "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+      }
+    },
+    "mining_level": {
+      "inventoryName": "&dOsiągnięcia: LEVEL KOPANIA",
+      "inventorySize": 27,
+      "elements": {
+        "level1": {
+          "name": "&5LEVEL KOPANIA #1",
+          "lore": [
+            "&7Czy odebrałeś: &r{RECEIVED}",
+            "&7Progres: &d{CURRENT_STATISTIC}/{MAX_STATISTIC} &8(&r{PROGRESS_BAR}&8)",
+            "&aKliknij, aby odebrać nagrodę!"
+          ],
+          "data": 0,
+          "amount": 1,
+          "material": "DIAMOND_PICKAXE",
+          "slot": 14,
+          "_guiElementType": "pl.rosehc.controller.wrapper.achievements.AchievementsAchievementPreviewGuiElementWrapper"
+        },
+        "back": {
+          "name": "&cKliknij, aby powrócić do menu głównego!",
+          "data": 0,
+          "amount": 1,
+          "material": "BARRIER",
+          "slot": 26,
+          "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+        }
+      },
+      "fillElement": {
+        "name": "&8#",
+        "data": 15,
+        "amount": 1,
+        "material": "STAINED_GLASS_PANE",
+        "slot": 0,
+        "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+      }
+    }
+  },
+  "achievements": [
+    {
+      "type": "EATEN_GOLDEN_HEADS",
+      "rewards": [
+        {
+          "item": {
+            "normal_item": {
+              "data": 0,
+              "amount": 1
+            },
+            "custom_item": "GHEAD"
+          },
+          "boost_amount": 0.0
+        },
+        {
+          "item": {
+            "normal_item": {
+              "material": "DIAMOND",
+              "data": 0,
+              "amount": 1
+            }
+          },
+          "boost_amount": 0.0
+        }
+      ],
+      "requiredStatistics": "150",
+      "level": 1
+    },
+    {
+      "type": "MINING_LEVEL",
+      "rewards": [
+        {
+          "boost_type": "DROP_CHANCE",
+          "boost_amount": 0.25
+        }
+      ],
+      "requiredStatistics": "25",
+      "level": 1
+    }
+  ],
+  "reward_receive_messages": {
+    "EATEN_GOLDEN_HEADS:1": "Gracz {PLAYER_NAME} odebral osiagniecie ZJEDZONE GHEADY (1) i otrzymal GHEADAx1 + DIAMENTx1!",
+    "MINING_LEVEL:1": "Gracz {PLAYER_NAME} odebral osiagniecie POZIOM KOPANIA (1) i otrzymal boosta szansy! (0.25%)"
+  }
+}

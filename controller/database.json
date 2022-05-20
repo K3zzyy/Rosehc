@@ -1,0 +1,14 @@
+{
+  "database": {
+    "host": "127.0.0.1",
+    "port": 5432,
+    "password": "test1245",
+    "user": "postgres",
+    "database": "postgres"
+  },
+  "redis": {
+    "host": "127.0.0.1",
+    "port": 6379,
+    "password": "none"
+  }
+}

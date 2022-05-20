@@ -1,0 +1,81 @@
+{
+  "sectors": {
+    "spawn_1": {
+      "type": "SPAWN",
+      "minX": -100,
+      "maxX": 100,
+      "minZ": -100,
+      "maxZ": 100
+    },
+    "spawn_2": {
+      "type": "SPAWN",
+      "minX": -100,
+      "maxX": 100,
+      "minZ": -100,
+      "maxZ": 100
+    },
+    "spawn_3": {
+      "type": "SPAWN",
+      "minX": -100,
+      "maxX": 100,
+      "minZ": -100,
+      "maxZ": 100
+    },
+    "s1": {
+      "type": "GAME",
+      "minX": -100,
+      "maxX": 1000,
+      "minZ": 100,
+      "maxZ": 1000
+    },
+    "w1": {
+      "type": "GAME",
+      "minX": -1000,
+      "maxX": -100,
+      "minZ": -100,
+      "maxZ": 1000
+    },
+    "e1": {
+      "type": "GAME",
+      "minX": 100,
+      "maxX": 1000,
+      "minZ": -1000,
+      "maxZ": 100
+    },
+    "n1": {
+      "type": "GAME",
+      "minX": -1000,
+      "maxX": 100,
+      "minZ": -1000,
+      "maxZ": -100
+    }
+  },
+  "border_size": 1000,
+  "proxies": [
+    1,
+    2
+  ],
+  "messages": {
+    "sectorIsOffline": "&cSektor, na który chcesz się połączyć jest aktualnie offline!",
+    "sectorIsHeavilyLoaded": "&cSektor, na który chcesz się połączyć jest aktualnie przeciążony",
+    "cannotSynchronizeYourData": "&cWystapił niespodziewany problem podczas próby synchronizacji twoich danych.",
+    "connectingInfo": "&aPomyślnie zsynchronizowano twoje dane! Łączę z sektorem {SECTOR_NAME}",
+    "sectorNotFound": "&cNie odnaleziono sektora na tej lokalizacji.",
+    "cannotBreakBlocksOnSpawn": "&cNie możesz niszczyć bloków na spawnie!",
+    "cannotBreakBlocksInEnd": "&cNie możesz niszczyć bloków w endzie!",
+    "cannotBreakBlocksNearSector": "&cNie możesz niszczyć bloków przy granicy sektora!",
+    "cannotPlaceBlocksOnSpawn": "&cNie możesz stawiać bloków na spawnie!",
+    "cannotPlaceBlocksInEnd": "&cNie możesz stawiać bloków w endzie!",
+    "cannotPlaceBlocksNearSector": "&cNie możesz stawiać bloków przy granicy sektora!",
+    "cannotFillTheBucketOnSpawn": "&cNie możesz napełniać wiaderka na spawnie!",
+    "cannotFillTheBucketNearSector": "&cNie możesz napełniać wiaderka przy granicy sektora!",
+    "cannotEmptyTheBucketOnSpawn": "&cNie możesz opróżniać wiaderka na spawnie!",
+    "cannotEmptyTheBucketNearSector": "&cNie możesz opróżniać wiaderka przy granicy sektora!",
+    "playerIsAlreadyOnlineOnThisSector": "&cPodany gracz jest już online na tym sektorze!",
+    "playerProfileNotFound": "&cNie posiadasz profilu.",
+    "nearSectorBossBarTitle": "&dZbliżasz się do granicy sektora &8| &7{DISTANCE}m",
+    "playerIsAlreadyOnline": "&cGracz o tym nicku jest już online!"
+  },
+  "border_bar_style": "SEGMENTED_10",
+  "border_bar_color": "PINK"
+}

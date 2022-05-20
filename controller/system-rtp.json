@@ -1,0 +1,20 @@
+{
+  "arenaDeletionActionBarInfo": "&7Arena zostanie usunięta za: &d{TIME}",
+  "cannotConnectToSector": "&cNie można było połączyć się z grywalnym sektorem...",
+  "cannotExecuteThisCommandOnThisSector": "&cNie możesz wykonywać tej komendy na tym sektorze!",
+  "creationIdleTime": "5s",
+  "deletionTime": "30s",
+  "allowed_commands": [
+    "/msg",
+    "/tell",
+    "/m",
+    "/reply",
+    "/r",
+    "/pomoc",
+    "/spawn",
+    "/teleport",
+    "/tp"
+  ],
+  "cuboidSize": 100,
+  "cuboidMinDistance": 10
+}

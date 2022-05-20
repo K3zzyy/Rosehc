@@ -1,0 +1,17 @@
+{
+  "group_messages": {
+    "youNeedToBePlate": "&cMusisz stać na półpłytce!",
+    "cannotTeleportByYourself": "&cNie możesz się teleportować samemu!",
+    "noGroupTeleportsSectorFound": "&cNie znaleziono żadnego wolnego sektora teparkowego!",
+    "noGuildSectorFound": "&cNie znaleziono żadnego wolnego sektora gildyjnego!",
+    "noFreeArenasFound": "&cBrak wolnych aren na sektorze {SECTOR_NAME}!",
+    "teleportationSucceedArena": "&7Pomyślnie przeteleportowałeś się na sektor &d{SECTOR_NAME} &7razem z graczem &d{PLAYER_NAME}&7!",
+    "teleportationSucceedNormal": "&7Pomyślnie przeteleportowano cię na sektor &d{SECTOR_NAME} &7z graczem &d{PLAYER_NAME}&7! &8(&7X: &d{X}, &7Y: &d{Y}, &7Z: &d{Z})"
+  },
+  "solo_messages": {
+    "noGuildSectorFound": "&cNie znaleziono żadnego wolnego sektora gildyjnego!",
+    "noFreeLocationWasFound": "&cNie można było znaleźć żadnej wolnej lokacji na sektorze {SECTOR_NAME}.",
+    "teleportationSucceed": "&7Pomyślnie przeteleportowano cię na sektor &d{SECTOR_NAME}&7! &8(&7X: &d{X}, &7Y: &d{Y}, &7Z: &d{Z})"
+  },
+  "groupTeleportRadius": 5
+}

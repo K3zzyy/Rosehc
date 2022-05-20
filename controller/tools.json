@@ -1,0 +1,2517 @@
+{
+  "messages": {
+    "playerIsOffline": "&cGracz o nicku {PLAYER_NAME} jest aktualnie offline!",
+    "playerNotFound": "&cGracz o nicku {PLAYER_NAME} nie istnieje w bazie danych!",
+    "cannotExecuteThisActionOnYourself": "&cNie możesz wykonać tej akcji na sobie!",
+    "sectorChangeIsCooldowned": "&cNie możesz zmienić sektora jeszcze przez {TIME}!",
+    "sectorIsFull": "&cSektor, na który chcesz się połączyć jest aktualnie pełen!",
+    "sectorNotFound": "&cSektor o nazwie {SECTOR_NAME} nie istnieje!",
+    "playerLoggedOutWhileRequestingTheirLocation": "&cGracz wylogował się podczas próby pobrania lokacji!",
+    "successfullyTeleportedToThePlayer": "&7Przeteleportowałeś się do gracza &d{PLAYER_NAME}&7!",
+    "successfullySelfTeleportedThePlayer": "&7Pomyślnie przeteleportowałeś gracza &d{PLAYER_NAME} &7do Ciebie!",
+    "successfullyTeleportedToTheSector": "&7Przeteleportowałeś się na środek sektora &d{SECTOR_NAME}&7!",
+    "gameModeNotFound": "&cTaki tryb gry nie istnieje!",
+    "gameModeSuccessfullyChanged": "&7Zmieniono tryb gry na &d{MODE_NAME}!",
+    "changedSpawnLocationSuccessfully": "&7Pomyślnie zmieniłeś lokację &dspawna&7!",
+    "teleportRequestAlreadySent": "&cWysłałeś już prośbę o teleportację do tego gracza!",
+    "teleportRequestNotSent": "&cNie posiadasz prośby o teleportację od tego gracza!",
+    "teleportRequestsNotFound": "&cNie posiadasz żadnej aktywnej prośby o teleportację!",
+    "teleportRequestSuccessfullySentPlayer": "&7Wysłałeś prośbę o teleportację do gracza &d{PLAYER_NAME}&7!",
+    "teleportRequestSuccessfullySentTarget": "&7Gracz &d{PLAYER_NAME} &7wysłał prośbę do teleportację do ciebie!\n&7Użyj: &d/tpaccept <nick> &7aby zaakceptować prośbę!\n&7Użyj: &5/tpdeny <nick> &7aby odrzucić prośbę!",
+    "teleportRequestSuccessfullyAcceptedOne": "&7Pomyślnie zaakceptowałeś prośbę o teleportację od gracza &d{PLAYER_NAME}&7!",
+    "teleportRequestSuccessfullyAcceptedAll": "&7Pomyślnie zaakceptowałeś prośbę o teleportację od &dkażdego gracza&7, który ją do ciebie wysłał!",
+    "teleportRequestSuccessfullyAcceptedTarget": "&d{PLAYER_NAME} &7zaakceptował twoją prośbę o teleportację!",
+    "teleportRequestSuccessfullyDeniedPlayer": "&7Pomyślnie odrzuciłeś prośbę o teleportację od gracza &d{PLAYER_NAME}&7!",
+    "teleportRequestSuccessfullyDeniedTarget": "&d{PLAYER_NAME} &7odrzucił twoją prośbę o teleportację!",
+    "teleportationHasBeenStarted": "&7Teleportacja na wyznaczone miejsce za &d{SECONDS}s&7...",
+    "teleportationHasBeenCancelled": "&cTeleportacja na wyznaczone miejsce została przerwana!",
+    "teleportationHasBeenFinished": "&aTeleportacja na wyznaczone miejsce powiodła się!",
+    "teleportationInfoActionBar": "&7Teleportacja nastąpi za: &d{SECONDS}s",
+    "teleportationHasBeenFinishedActionBar": "&aTeleportacja na wyznaczone miejsce powiodła się!",
+    "privateMessageCannotBeEmpty": "&cWiadomość prywatna nie może być pusta!",
+    "privateMessageFormatPlayer": "&dJa &8-> &d{PLAYER_NAME}&7: {MESSAGE}",
+    "privateMessageLastPlayerNotFound": "&cNie znaleziono żadnego gracza, z którym pisałeś!",
+    "privateMessageFormatTarget": "&d{PLAYER_NAME} &8-> &dJa&7: {MESSAGE}",
+    "privateMessageTargetPlayerHasDisabledPMS": "&cPodany gracz ma wyłączone wiadomości prywatne do siebie!",
+    "privateMessageTargetPlayerIsIgnoringYou": "&cPodany gracz ma cię w liście ignorowanych!",
+    "channelIsACurrentSector": "&cTen kanał jest twoim aktualnym sektorem, nie możesz się na niego przełączyć!",
+    "chatMessageIsCooldowned": "&cNie możesz wysyłać wiadomości na chacie jeszcze przez {TIME}!",
+    "chatMessageCannotBeEmpty": "&cNie możesz wysyłać pustej wiadomości na chacie!",
+    "chatIsCurrentlyDisabled": "&cChat jest aktualnie wyłączony!",
+    "chatIsAlreadyDisabled": "&cChat jest już wyłączony!",
+    "chatHasBeenSuccessfullyDisabledSender": "&cChat został pomyślnie wyłączony przez ciebie!",
+    "chatHasBeenSuccessfullyDisabledGlobal": "&7Chat został &cwyłączony &7przez administratora &d{PLAYER_NAME}&7!",
+    "chatIsAlreadyEnabled": "&cChat jest już włączony!",
+    "chatHasBeenSuccessfullyEnabledSender": "&aChat został pomyślnie włączony przez ciebie!",
+    "chatHasBeenSuccessfullyEnabledGlobal": "&7Chat został &awłączony &7przez administratora &d{PLAYER_NAME}&7!",
+    "chatPremiumIsCurrentlyEnabled": "&cChat jest włączony aktualnie tylko dla rang PREMIUM!",
+    "chatPremiumIsAlreadyEnabled": "&cChat dla rang premium jest już wyłączony!",
+    "chatPremiumHasBeenSuccessfullyEnabledSender": "&aChat dla rang premium został pomyślnie włączony przez ciebie!",
+    "chatPremiumHasBeenSuccessfullyEnabledGlobal": "&7Chat dla rang &5&lPREMIUM &7został &awłączony &7przez administratora &d{PLAYER_NAME}&7!",
+    "chatHasBeenCleared": "&7Chat został wyczyszczony przez administratora &d{PLAYER_NAME}&7!",
+    "chatCommandUsage": "&5/chat clear/cc - &dCzyści cały chat serwerowy\n&5/chat disable/off - &dWyłącza cały chat serwerowy\n&5/chat enable/on - &dWłącza cały chat serwerowy\n&5/chat premium - &dWłącza cały chat serwerowy, ale tylko dla rang premium",
+    "chatFormatAdmin": "{CHAT_PREFIX}%1$s&8: {CHAT_SUFFIX}%2$s",
+    "chatFormatPlayer": "{CHAT_PREFIX}%1$s&8: {CHAT_SUFFIX}%2$s",
+    "guiNotFound": "&cPodane GUI nie zostało skonfigurowane!",
+    "rankNotFound": "&cPodana ranga nie istnieje!",
+    "rankListStart": "&cLista rang:",
+    "rankListFormat": "&c{RANK_NAME}",
+    "rankSuccessfullySetSender": "&7Pomyślnie ustawiłeś rangę &d{RANK_NAME} &7dla gracza &d{PLAYER_NAME} &7na czas: &d{TIME}&7!",
+    "rankSuccessfullySetReceiver": "&7Pomyślnie otrzymałeś rangę &d{RANK_NAME} &7od administratora &d{PLAYER_NAME} &7na czas: &d{TIME}&7!",
+    "magicCaseItemLeftTimeInfo": "&7DROP ZA &d{TIME}&7...",
+    "magicCaseItemDroppedInfo": "&7Wydropiony item: &d{ITEM_NAME}x{ITEM_AMOUNT}",
+    "magicCaseItemNotDroppedInfo": "&cNic nie wydropiłeś :(",
+    "magicCaseIsAlreadyBeingOpened": "&cOtwierasz już jedną skrzynkę! Nie możesz otworzyć drugiej.",
+    "magicCaseGivenAll": "&7Cały serwer otrzymał &aMagiczną Skrzynkęx{AMOUNT} &7od administratora &d{PLAYER_NAME}&7!",
+    "magicCaseGivenSender": "&7Pomyślnie dałeś &aMagiczną Skrzynkęx{AMOUNT} &7dla gracza &d{PLAYER_NAME}&7!",
+    "magicCaseGivenReceiver": "&7Otrzymałeś &aMagiczną Skrzynkęx{AMOUNT} &7od administratora &d{PLAYER_NAME}&7!",
+    "magicCaseCommandUsage": "&5/magiccase all <ilość> - &dRozdaje x magicznych skrzynek dla każdego gracza\n&5/magiccase player <nick> <ilość> - &dRozdaje x magicznych skrzynek dla podanego gracza",
+    "homeNoPermission": "&cNie posiadasz uprawnień do tego domu!",
+    "homeNotSet": "&cNie ustawiłeś jeszcze tego domu!",
+    "homeSuccessfullySet": "&7Pomyślnie ustawiłeś dom o identyfikatorze &d{HOME_IDENTIFIER}&7!",
+    "homeCannotBeSet": "&cNie możesz ustawić tutaj domu!",
+    "deathKickInfo": "&d{SECTOR_NAME} &8-> &5Umarłeś! Relognij aby grać ponownie.",
+    "kitNoPermission": "&cNie posiadasz uprawnień do tego kita! ({PERMISSION_NAME})",
+    "kitAlreadyReceived": "&cJuż odebrałeś tego kita! Możesz go odebrać dopiero za: {TIME}",
+    "kitSuccessfullyReceived": "&7Pomyślnie odebrałeś zestaw o nazwie &d{KIT_NAME}&7!",
+    "cannotChangeSectorInCombat": "&cNie możesz zmienić sektora podczas walki!",
+    "cannotExecuteThisCommandInCombat": "&cNie możesz wykonywać tej komendy podczas walki!",
+    "cannotCraftItemsInCombat": "&cNie możesz craftować przedmiotów podczas walki z innym graczem!",
+    "combatEndInfo": "&aWalka się skończyła, możesz się już bezpiecznie wylogować!",
+    "combatLeftTimeInfo": "&5ANTY-LOGOUT &8(&d{TIME}&8)",
+    "combatTaggedInfo": "&7Jesteś podczas walki z &d{PLAYER_NAME}&7! Nie możesz wylogować się przez &d21s&7!",
+    "commandIsBlocked": "&cTa komenda jest zablokowana! Nie możesz jej używać.",
+    "commandNotFound": "&cPodana komenda nie istnieje! Aby sprawdzić listę dostępnych komend, wpisz: /pomoc",
+    "vanishEnabledInfo": "&aVanish został włączony!",
+    "vanishDisabledInfo": "&cVanish został wyłączony :(",
+    "vanishYouAreInvisibleActionBar": "&7Vanish jest aktualnie &5włączony&7!",
+    "vanishNameTagSuffix": " &d&lVANISH",
+    "godEnabledInfo": "&aGod został włączony!",
+    "godDisabledInfo": "&cGod został wyłączony :(",
+    "alertPrefixTitle": "&8[&4ALERT&8]",
+    "depositLimitReached": "&7Znaleziono nadmiar przedmiotów w Twoim ekwipunku. Został on przeniesiony do: &d/schowek",
+    "depositNoItemsToWithdrawFound": "&cNie znaleziono żadnych itemów do wypłacenia w twoim depozycie!",
+    "serverIsAlreadyFrozen": "&cSerwer jest już zamrożony! Nie możesz zamrozić go ponownie.",
+    "serverIsNotFrozen": "&cSerwer nie jest zamrożony! Nie możesz odmrozić go ponownie.",
+    "successfullyFrozenTheServer": "&aPomyślnie zamroziłeś cały serwer!",
+    "successfullyUnfrozenTheServer": "&aPomyślnie odmroziłeś cały serwer!",
+    "serverIsFrozenInfoTitle": "&8[&d&lZAMROŻENIE&8]",
+    "serverIsFrozenInfoSubTitle": "&7Oczekuj na start edycji.",
+    "serverGotUnfrozenInfoTitle": "&d&lSERWER ODMROŻONY!",
+    "serverGotUnfrozenInfoSubTitle": "&5 &lPowodzenia :)",
+    "bossBarSuccessfullyUpdated": "&aPomyślnie zmodyfikowano bossbara.",
+    "bossBarSuccessfullyRemoved": "&cPomyślnie usunięto bossbara.",
+    "bossBarUsage": "&5/bossbar update <czas (0 = perm)> <kolor> <styl> <tytuł> - &dWykonuje modyfikację specjalnego bossbara dla każdego gracza\n&5/bossbar remove - &dUsuwa specjalnego bossbara",
+    "flightEnabledInfo": "&aLatanie zostało włączone!",
+    "flightDisabledInfo": "&cLatanie zostało wyłączone :(",
+    "flightSpeedSuccessfullyChanged": "&7Szybkość latania została pomyślnie zmieniona na &d{SPEED}&7!",
+    "walkingSpeedSuccessfullyChanged": "&7Szybkość chodzenia została pomyślnie zmieniona na &d{SPEED}&7!",
+    "yourInventoryHasBeenCleared": "&aTwoje inventory zostało pomyślnie wyczyszczone!",
+    "targetInventoryHasBeenClearedSender": "&aPomyślnie wyczyściłeś inventory gracza {PLAYER_NAME}!",
+    "targetInventoryHasBeenClearedReceiver": "&aTwoje inventory zostało wyczyszczone przez administratora {PLAYER_NAME}!",
+    "youHaveBeenHealed": "&aZostałeś pomyślnie uleczony!",
+    "targetHaveBeenHealedSender": "&aPomyślnie uleczyłeś gracza {PLAYER_NAME}!",
+    "targetHaveBeenHealedReceiver": "&aZostałeś pomyślnie wyczyszczony przez administratora {PLAYER_NAME}!",
+    "cannotEquipGoldenHead": "&cNie możesz założyć golden heada na głowę!",
+    "safeIsBeingModified": "&cSejf jest aktualnie modyfikowany przez gracza o nicku: {PLAYER_NAME}!",
+    "safeIsBeingSaved": "&cSejf jest aktualnie zapisywany!",
+    "safeIsNotYours": "&cSejf nie należy do ciebie! Nie możesz go otworzyć.",
+    "noSafeInInventory": "&cNie posiadasz sejfu w inventory!",
+    "safeNotFoundInDatabase": "&cSejf nie istnieje w bazie danych!",
+    "safeDescriptionCannotBeEmpty": "&cOpis sejfu nie może być pusty!",
+    "safeDescriptionHasTooManyChars": "&cOpis sejfu nie może mieć więcej niż 16 znaków!",
+    "safeDescriptionHasBeenChanged": "&7Pomyślnie zmieniłeś opis sejfu na &d{DESCRIPTION}&7!",
+    "onlySafeCanBeTakenOverByCrowbar": "&cTylko sejf może zostać przejęty przez łom!",
+    "youCannotTakeoverYourOwnSafe": "&cNie możesz przejąć własnego sejfu!",
+    "safeHaveBeenSuccessfullyTakenOver": "&aPomyślnie przejąłeś sejf o identyfikatorze {SAFE_UNIQUE_ID}!",
+    "cannotUsePearlsOnEndShockwave": "&cNie możesz używać pereł w locie podczas fali uderzeniowej!",
+    "endWaterWillBeRemovedSoon": "&aPostawiłeś wodę! Zostanie ona usunięta w ciągu 10 sekund jeżeli jej nie zbierzesz!",
+    "endWaterHasBeenSuccessfullyFilled": "&aPomyślnie zebrałeś wodę!",
+    "endPortalPointNotSet": "&cŻaden punkt od portalu nie został ustalony!",
+    "endPortalPointNotActive": "&cTen portal jest aktualnie nieaktywny!",
+    "endPortalPointEditingSessionIsAlreadyActive": "&cSesja edytowania punktów portalu jest już aktywna!",
+    "endPortalPointEditingSessionIsNotActive": "&cSesja edytowania punktów portalu nie jest aktywna!",
+    "endPortalPointEditingSessionHasBeenActivated": "&aSesja edytowania punktów portalu została włączona!\n&aUżyj komendy: /portalpoint setpoint aby ustawić punkt\n&aUzyj komendy: /portalpoint edit stop aby zakończyć edycję.",
+    "endPortalPointEditingSessionPointsAreNotSet": "&cSesja edytowania punktów portalu nie posiada żadnych punktów! Anuluję dodanie nowego punktu.",
+    "endPortalPointEditingSessionHasBeenSuccessfullyEnded": "&aPomyślnie zakończono sesję edytowania punktów portalu i dodano nowy punkt!",
+    "endPortalPointCannotBeSetHere": "&cNie możesz ustawić w tym miejscu punktu portalu!",
+    "endPortalPointEditingFirstPointIsAlreadySet": "&cPierwszy punkt portalu jest już ustawiony!",
+    "endPortalPointEditingSecondPointIsAlreadySet": "&cDrugi punkt portalu jest już ustawiony!",
+    "endPortalPointEditingFirstPointHasBeenSuccessfullySet": "&aPierwszy punkt portalu został pomyślnie ustawiony!",
+    "endPortalPointEditingSecondPointHasBeenSuccessfullySet": "&aDrugi punkt portalu został pomyślnie ustawiony!",
+    "endPortalPointDoesNotExists": "&cPunkt portalu o identyfikatorze {IDENTIFIER} nie istnieje!",
+    "endPortalPointHasBeenSuccessfullyDeleted": "&aPomyślnie usunięto punkt portalu o identyfikatorze {IDENTIFIER}",
+    "endPortalPointCommandUsage": "&5/portalpoint edit start - &dTworzy i startuje sesję edytowania portali\n&5/portalpoint edit stop - &dKończy sesję tworzenia portali i dodaje nowy punkt do konfiguracji\n&5/portalpoint delete <id> - &dUsuwa dany punkt portalu z konfiguracji\n&5/portalpoint setpoint - &dUstawia pierwszy lub drugi punkt w sesji edytowania portali",
+    "youAreBannedInEnd": "&cJesteś zbanowany! Nie możesz wejść do endu przez: {TIME}",
+    "cannotCraftEnchantedGoldenApples": "&cNie możesz craftować koxów, ponieważ na naszym serwerze są gheady!",
+    "cannotEatEnchantedGoldenApples": "&cNie możesz jeść koxów, ponieważ na naszym serwerze są gheady!",
+    "globalTurboDropIsActiveActionBarInfo": "&5Turbo&fDrop &7globalny jest aktywny jeszcze przez &d{TIME}&7! &8(&d{MULTIPLIER}x&8)",
+    "yourTurboDropIsActiveActionBarInfo": "&5Turbo&fDrop &7dla ciebie jest aktywny jeszcze przez &d{TIME}&7! &8(&d{MULTIPLIER}x&8)",
+    "turboDropPickingActivatedInfo": "&8[&dLOSOWANIE TURBODROPU&8] &7Trwa wybieranie graczy na każdym sektorze gildyjnym...",
+    "turboDropPickingNoPlayersFound": "&8[&dLOSOWANIE TURBODROPU&8] &cNie odnaleziono żadnych graczy na sektorach grywalnych!",
+    "turboDropPickingSucceed": "&8[&dLOSOWANIE TURBODROPU&8] &7Wylosowano &dTurboDrop na 15m &7dla: &d{PICKED_PLAYER_NAMES}",
+    "turboDropForPlayerHasBeenActivatedSender": "&7Pomyślnie aktywowałeś &dTurboDrop &7na czas &d{TIME} &7dla gracza &d{PLAYER_NAME}&7!",
+    "turboDropForPlayerHasBeenActivatedReceiver": "&dTurboDrop &7na czas &d{TIME} &7został dla Ciebie zaktywowany przez administratora &d{PLAYER_NAME}&7!",
+    "turboDropGlobalHasBeenActivated": "&7Pomyślnie aktywowałeś &dTurboDrop &7na czas &d{TIME} &7dla każdego gracza!",
+    "turboDropCommandUsage": "&5/turbodrop player <nickname> <multiplier> <time> - &dCzyści cały chat serwerowy\n&5/turbodrop global <multiplier> <time> - &dCzyści cały chat serwerowy",
+    "dropItemDroppedActionBarInfo": "&7Wydropiłeś: &d{DROP_NAME} &7x&d{AMOUNT} &8(&d+{XP} &7exp&8)",
+    "youDidALevelUpTitle": "&5&lGratulację!",
+    "youDidALevelUpSubTitle": "&7Awansowałeś na level &d{LEVEL}&7!",
+    "userLevelInfoTarget": "&7Nick: &d{PLAYER_NAME}\n&7Level: &d{LEVEL}\n&7EXP: &d{CURRENT_EXP}\n&7Wymagany EXP do awansu: &d{NEEDED_EXP}",
+    "userLevelInfoYourself": "&7Level: &d{LEVEL}\n&7EXP: &d{CURRENT_EXP}\n&7Wymagany EXP do awansu: &d{NEEDED_EXP}",
+    "cobbleXNoNeededItems": "&cNie posiadasz potrzebnych itemów! Brakuje ci: {AMOUNT_LEFT} cobbla.",
+    "cobbleXSuccessfullyCreated": "&aPomyślnie stworzono cobblexa!",
+    "antiGriefBlockWillBeVanishedSoon": "&cAntyGrif: &7Blok, który postawiłeś zniknie za &d30m&7!",
+    "stoneGeneratorHasBeenSuccessfullyCreated": "&aPomyślnie stworzyłeś generator stone'a!",
+    "stoneGeneratorHasBeenSuccessfullyDestroyed": "&aPomyślnie zniszczyłeś generator stone'a!",
+    "repairPickaxeIsCooldowned": "&cNie możesz naprawić kilofa jeszcze przez {TIME}!",
+    "repairPickaxeCannotRepairItemThatIsNotAPickaxe": "&cNie możesz naprawić przedmiotu który nie jest kilofem!",
+    "repairPickaxeNoRequiredDiamonds": "&cNie posiadasz wymaganej ilości diamentów do naprawienia kilofa (16)!",
+    "repairPickaxeNoRequiredLevel": "&cNie posiadasz wymaganego levela do naprawienia kilofa (30)!",
+    "repairPickaxeHasBeenSuccessfullyRepaired": "&aPomyślnie naprawiłeś swój kilof!",
+    "repairSingleCannotRepairThisItem": "&cNie możesz naprawić tego przedmiotu!",
+    "repairSingleSuccessfullyRepaired": "&aPomyślnie naprawiłeś przedmiot który trzymasz w ręce!",
+    "repairAllNoItemsFound": "&cNie posiadasz żadnych itemów do naprawy!",
+    "repairAllSuccessfullyRepaired": "&aPomyślnie naprawiłeś wszystkie przedmioty w twoim EQ!",
+    "blocksCannotBeConverted": "&cNie można było przekonwertować sztabek na bloki!",
+    "blocksSuccessfullyConverted": "&aPomyślnie zamieniono wszystkie sztabki na bloki!",
+    "discordRewardReceived": "&8&m--------&8[&9DISCORD&8]&8&m--------\n&8>> &7Gracz &d{PLAYER_NAME} &7odebrał nagrodę\n&8>> &7za dołączenie na &9Discorda&7!\n&8>> &7Chcesz też? Dołącz na naszego dc: &ddc.rosehc.pl\n&8&m--------&8[&9DISCORD&8]&8&m--------",
+    "healthInfoAfterProjectileHitActionBarInfo": "&7Gracz &d{PLAYER_NAME} &7posiada &d{HEALTH} &4❤",
+    "ignoreNowIgnoringPlayer": "&7Od teraz ignorujesz gracza o nicku: &d{PLAYER_NAME}",
+    "ignoreNotIgnoringPlayer": "&7Od teraz nie ignorujesz już gracza o nicku: &d{PLAYER_NAME}",
+    "accountCreated": "&aTwoje konto zostało pomyślnie stworzone! Relognij.",
+    "proxyIsFull": "&cSerwer jest aktualnie pełen graczy!",
+    "proxyJoinIsCooldowned": "&cMusisz odczekać {TIME} przed następną próbą połączenia się z serwerem!",
+    "configReloadRequested": "&aProśba o przeładowanie configu została pomyślnie wysłana!",
+    "whitelistIsAlreadyEnabled": "&cWhitelista jest już włączona!",
+    "whitelistGotSuccessfullyEnabled": "&aPomyślnie włączono whitelistę na serwerach proxy!",
+    "whitelistIsAlreadyDisabled": "&cWhitelista jest już wyłączona!",
+    "whitelistGotSuccessfullyDisabled": "&aPomyślnie wyłączono whitelistę na serwerach proxy!",
+    "whitelistPlayerIsAlreadyWhitelisted": "&cPodany gracz jest już w whiteliście!",
+    "whitelistPlayerHasBeenSuccessfullyAdded": "&aPomyślnie dodano gracza {PLAYER_NAME} do whitelisty!",
+    "whitelistPlayerIsNotWhitelisted": "&cPodany gracz nie jest w whiteliście!",
+    "whitelistPlayerHasBeenSuccessfullyRemoved": "&aPomyślnie usunięto gracza {PLAYER_NAME} do whitelisty!",
+    "whitelistPlayerList": "&7Lista graczy w whiteliście: &5{PLAYERS}",
+    "whitelistReasonHasBeenSuccessfullyChanged": "&aPomyślnie zmieniono powód whitelisty na: &r{REASON}",
+    "whitelistUsage": "&5/whitelist add <nick> - &dDodaje gracza do whitelisty\n&5/whitelist remove <nick> - &dUsuwa gracza z whitelisty\n&5/whitelist on - &dWłącza whiteliste\n&5/whitelist off - &dWyłącza whiteliste\n&5/whitelist reason <powód> - &dUstawia powód whitelisty\n&5/whitelist list - &dWyświetla listę osób w whiteliście",
+    "slotsUsage": "&5/setslots proxy <ilość> - &dUstawia sloty na podaną ilość na każdym proxy\n&5/setslots sectors <ilość> - &dUstawia sloty na podaną ilość na każdym sektorze",
+    "slotsSuccessfullySet": "&aPomyślnie zmieniono sloty na {SLOTS}!",
+    "maskSuccessfullySet": "&aPomyślnie ustawiono maskę na {LIMIT}!",
+    "maskSuccessfullyDisabled": "&aPomyślnie wyłączono maskę!",
+    "sectorListInfo": "&5[{SECTOR_NAME}] &d{SECTOR_ONLINE_PLAYERS} &8- &r{FORMATTED_TPS} &8(&5{FORMATTED_LOAD}%&8)",
+    "proxyListInfo": "&5[{PROXY_IDENTIFIER}] &d{PROXY_ONLINE_PLAYERS} &8- &5{FORMATTED_LOAD}%",
+    "globalListInfo": "  &7Razem graczy &d{GLOBAL_ONLINE_PLAYERS} &8(&5{CURRENT_ONLINE_PLAYERS}&8)",
+    "successfullyKicked": "&7Pomyślnie wyrzuciłeś gracza o nicku &d{PLAYER_NAME} &7z powodem: &r{REASON}&7!",
+    "helpopIsCooldowned": "&cNie możesz wysyłać wiadomości na helpopie jeszcze przez {TIME}!",
+    "helpopMessageCannotBeEmpty": "&cWiadomość na helpopie nie może być pusta!",
+    "helpopMessageSuccessfullySent": "&aPomyślnie wysłałeś wiadomość do administracji!",
+    "helpopFormat": "&dHELPOP &8[&5proxy_{PROXY_IDENTIFIER}&8] [&5{SECTOR_NAME}&8] &d{PLAYER_NAME} &8-> &7{MESSAGE}",
+    "blazingPackIsOutdated": "&5Posiadasz nieaktualną wersję paczki!\n&aJak pobrać nową wersję?\n&7Wejdz na stronę: &dhttps://www.blazingpack.pl\n&7Kliknij przycisk: &dPOBIERZ PACZKĘ/POBIERZ 1.8.8! (lub Pobierz automatyczny instalator (Windows only) na dole strony)\n&7Odpakuj, przenieś do %appdata% -> .minecraft -> .versions, zrestartuj grę\n&7i gotowe! Możesz cieszyć się ponownie grą na naszym serwerze :)",
+    "banUserIsAlreadyBanned": "&cTen użytkownik posiada już bana!",
+    "banUserIsNotBanned": "&cTen użytkownik nie posiada bana!",
+    "banCannotBeCreated": "&cNie można było stworzyć bana.",
+    "banCannotBeDeleted": "&cNie można było usunąć bana.",
+    "banPermBroadcastSilent": "&8[&cUKRYTY&8] &7Gracz &d{PLAYER_NAME} &7został permanentnie zbanowany przez administratora &d{STAFF_NAME} &7z powodem: &d{REASON}&7!",
+    "banPermBroadcastGlobal": "&7Gracz &d{PLAYER_NAME} &7został permanentnie zbanowany przez administratora &d{STAFF_NAME} &7z powodem: &d{REASON}&7!",
+    "banTempBroadcastSilent": "&8[&cUKRYTY&8] &7Gracz &d{PLAYER_NAME} &7został tymczasowo zbanowany przez administratora &d{STAFF_NAME} &7z powodem: &d{REASON} &7na czas: &d{TIME}&7!",
+    "banTempBroadcastGlobal": " &7Gracz &d{PLAYER_NAME} &7został tymczasowo zbanowany przez administratora &d{STAFF_NAME} &7z powodem: &d{REASON} &7na czas: &d{TIME}&7!",
+    "banUnBanBroadcastSilent": "&8[&cUKRYTY&8] &7Gracz &d{PLAYER_NAME} &7został odbanowany przez administratora &d{STAFF_NAME}&7!",
+    "banUnBanBroadcastGlobal": "&7Gracz &d{PLAYER_NAME} &7został odbanowany przez administratora &d{STAFF_NAME}&7!",
+    "banKickCommandPerm": "&cZostałeś permanentnie zbanowany przez administratora {STAFF_NAME}\n&cRelognij, aby dowiedzieć się więcej!",
+    "banKickCommandTemp": "&cZostałeś tymczasowo zbanowany przez administratora {STAFF_NAME}\n&cRelognij, aby dowiedzieć się więcej!",
+    "banKickJoinPerm": "&cZostałeś permanentnie przez administratora: &4{STAFF_NAME}\n&cNick: &4{PLAYER_NAME}\n&cPowód: &4{REASON}\n&cBana utworzono: &4{CREATION_TIME}\n&cNiesłuszny ban? Zgłoś się do nas na ts: &4ts.rosehc.pl &club dc: &4dc.rosehc.pl",
+    "banKickJoinTemp": "&cZostałeś tymczasowo zbanowany przez administratora: &4{STAFF_NAME}\n&cNick: &4{PLAYER_NAME}\n&cPowód: &4{REASON}\n&cWygasa: &4za {LEFT_TIME}\n&cBana utworzono: &4{CREATION_TIME}\n&cNiesłuszny ban? Zgłoś się do nas na ts: &4ts.rosehc.pl &club dc: &4dc.rosehc.pl"
+  },
+  "ranks": [
+    {
+      "name": "gracz",
+      "chatPrefix": "&7",
+      "chatSuffix": "&f",
+      "nameTagPrefix": "&7",
+      "nameTagSuffix": "&f",
+      "permissions": [],
+      "priority": 1,
+      "defaultRank": true
+    },
+    {
+      "name": "root",
+      "chatPrefix": "&c",
+      "chatSuffix": "&6",
+      "nameTagPrefix": "&7",
+      "nameTagSuffix": "&f",
+      "permissions": [
+        "*"
+      ],
+      "priority": 1,
+      "defaultRank": false
+    }
+  ],
+  "proxy_whitelist": {
+    "players": [
+      "inzynierr",
+      "squeru",
+      "Ajo2k",
+      "vkicpeross",
+      "finezjaa",
+      "mmater",
+      "xSkrzat",
+      "Maacius",
+      "iK33zy",
+      "K3zzy"
+    ],
+    "reason": "&cPrzerwa techniczna.",
+    "enabled": true
+  },
+  "proxy_motd": {
+    "firstLine": "pierwsza",
+    "secondLine": "druga",
+    "thirdLine": "trzecia",
+    "playersInfo": "&7{ONLINE_PLAYERS}&8/&7{MAX_PLAYERS}",
+    "hoverLines": [
+      "&7Strona: &dwww.rosehc.pl",
+      "&7TS3: &dts.rosehc.pl",
+      "&7Facebook: &dfb.rosehc.pl",
+      "&7Discord: &ddc.rosehc.pl",
+      "",
+      "&7Proxy: &dproxy_{PROXY_IDENTIFIER}",
+      "&7Użycie procesora: &d{PROXY_CPU_USAGE}",
+      "&7Licznik nie pokaże więcej graczy niż: &d{COUNTER_PLAYERS_LIMIT}"
+    ],
+    "thirdLineSpacing": 24,
+    "counterPlayersLimit": 2000
+  },
+  "spawn_location": {
+    "worldName": "world",
+    "x": 0.5634471088716294,
+    "y": 89.0,
+    "z": 0.39728402001769175,
+    "yaw": 0.14998527,
+    "pitch": 5.09993
+  },
+  "case_drops": [
+    {
+      "material": "DIAMOND",
+      "name": "&cDiament",
+      "lore": [
+        "&cTo jest",
+        "&aPrzykladowy item"
+      ],
+      "enchantments": [
+        {
+          "enchantmentName": "DAMAGE_ALL",
+          "enchantmentLevel": 5
+        },
+        {
+          "enchantmentName": "DURABILITY",
+          "enchantmentLevel": 1337
+        }
+      ],
+      "chance": 100.0,
+      "data": 0,
+      "minAmount": 1,
+      "maxAmount": 1
+    },
+    {
+      "material": "GOLD_INGOT",
+      "name": "&aO kurwa pierdolne chyba",
+      "lore": [
+        "&cTo jest",
+        "&aPrzykladowy item"
+      ],
+      "enchantments": [
+        {
+          "enchantmentName": "DAMAGE_ALL",
+          "enchantmentLevel": 5
+        },
+        {
+          "enchantmentName": "DURABILITY",
+          "enchantmentLevel": 2137
+        }
+      ],
+      "chance": 100.0,
+      "data": 0,
+      "minAmount": 1,
+      "maxAmount": 2
+    }
+  ],
+  "cobbleX_drops": [
+    {
+      "material": "DIAMOND",
+      "name": "&cDiament",
+      "lore": [
+        "&cTo jest",
+        "&aPrzykladowy item"
+      ],
+      "enchantments": [
+        {
+          "enchantmentName": "DAMAGE_ALL",
+          "enchantmentLevel": 5
+        },
+        {
+          "enchantmentName": "DURABILITY",
+          "enchantmentLevel": 1337
+        }
+      ],
+      "data": 0,
+      "minAmount": 1,
+      "maxAmount": 1
+    },
+    {
+      "material": "GOLD_INGOT",
+      "name": "&aO kurwa pierdolne chyba",
+      "lore": [
+        "&cTo jest",
+        "&aPrzykladowy item"
+      ],
+      "enchantments": [
+        {
+          "enchantmentName": "DAMAGE_ALL",
+          "enchantmentLevel": 5
+        },
+        {
+          "enchantmentName": "DURABILITY",
+          "enchantmentLevel": 2137
+        }
+      ],
+      "data": 0,
+      "minAmount": 1,
+      "maxAmount": 2
+    }
+  ],
+  "inventories": {
+    "drop_magicCase": {
+      "inventoryName": "&dDROP (MAGICZNA SKRZYNKA)",
+      "inventorySize": 54,
+      "elements": {
+        "back": {
+          "name": "&cKliknij, aby powrócić do menu głównego!",
+          "data": 0,
+          "amount": 1,
+          "material": "FENCE_GATE",
+          "slot": 53,
+          "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+        },
+        "glass0": {
+          "name": "&8#",
+          "data": 15,
+          "amount": 1,
+          "material": "STAINED_GLASS_PANE",
+          "slot": 0,
+          "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+        },
+        "glass1": {
+          "name": "&8#",
+          "data": 15,
+          "amount": 1,
+          "material": "STAINED_GLASS_PANE",
+          "slot": 1,
+          "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+        },
+        "glass2": {
+          "name": "&8#",
+          "data": 15,
+          "amount": 1,
+          "material": "STAINED_GLASS_PANE",
+          "slot": 2,
+          "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+        },
+        "glass3": {
+          "name": "&8#",
+          "data": 15,
+          "amount": 1,
+          "material": "STAINED_GLASS_PANE",
+          "slot": 3,
+          "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+        },
+        "glass4": {
+          "name": "&8#",
+          "data": 15,
+          "amount": 1,
+          "material": "STAINED_GLASS_PANE",
+          "slot": 4,
+          "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+        },
+        "glass5": {
+          "name": "&8#",
+          "data": 15,
+          "amount": 1,
+          "material": "STAINED_GLASS_PANE",
+          "slot": 5,
+          "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+        },
+        "glass6": {
+          "name": "&8#",
+          "data": 15,
+          "amount": 1,
+          "material": "STAINED_GLASS_PANE",
+          "slot": 6,
+          "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+        },
+        "glass7": {
+          "name": "&8#",
+          "data": 15,
+          "amount": 1,
+          "material": "STAINED_GLASS_PANE",
+          "slot": 7,
+          "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+        },
+        "glass8": {
+          "name": "&8#",
+          "data": 15,
+          "amount": 1,
+          "material": "STAINED_GLASS_PANE",
+          "slot": 8,
+          "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+        },
+        "glass9": {
+          "name": "&8#",
+          "data": 15,
+          "amount": 1,
+          "material": "STAINED_GLASS_PANE",
+          "slot": 9,
+          "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+        },
+        "glass10": {
+          "name": "&8#",
+          "data": 15,
+          "amount": 1,
+          "material": "STAINED_GLASS_PANE",
+          "slot": 10,
+          "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+        },
+        "glass11": {
+          "name": "&8#",
+          "data": 15,
+          "amount": 1,
+          "material": "STAINED_GLASS_PANE",
+          "slot": 16,
+          "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+        },
+        "glass12": {
+          "name": "&8#",
+          "data": 15,
+          "amount": 1,
+          "material": "STAINED_GLASS_PANE",
+          "slot": 17,
+          "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+        },
+        "glass13": {
+          "name": "&8#",
+          "data": 15,
+          "amount": 1,
+          "material": "STAINED_GLASS_PANE",
+          "slot": 18,
+          "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+        },
+        "glass14": {
+          "name": "&8#",
+          "data": 15,
+          "amount": 1,
+          "material": "STAINED_GLASS_PANE",
+          "slot": 19,
+          "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+        },
+        "glass15": {
+          "name": "&8#",
+          "data": 15,
+          "amount": 1,
+          "material": "STAINED_GLASS_PANE",
+          "slot": 25,
+          "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+        },
+        "glass16": {
+          "name": "&8#",
+          "data": 15,
+          "amount": 1,
+          "material": "STAINED_GLASS_PANE",
+          "slot": 26,
+          "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+        },
+        "glass17": {
+          "name": "&8#",
+          "data": 15,
+          "amount": 1,
+          "material": "STAINED_GLASS_PANE",
+          "slot": 27,
+          "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+        },
+        "glass18": {
+          "name": "&8#",
+          "data": 15,
+          "amount": 1,
+          "material": "STAINED_GLASS_PANE",
+          "slot": 28,
+          "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+        },
+        "glass19": {
+          "name": "&8#",
+          "data": 15,
+          "amount": 1,
+          "material": "STAINED_GLASS_PANE",
+          "slot": 34,
+          "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+        },
+        "glass20": {
+          "name": "&8#",
+          "data": 15,
+          "amount": 1,
+          "material": "STAINED_GLASS_PANE",
+          "slot": 35,
+          "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+        },
+        "glass21": {
+          "name": "&8#",
+          "data": 15,
+          "amount": 1,
+          "material": "STAINED_GLASS_PANE",
+          "slot": 36,
+          "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+        },
+        "glass22": {
+          "name": "&8#",
+          "data": 15,
+          "amount": 1,
+          "material": "STAINED_GLASS_PANE",
+          "slot": 37,
+          "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+        },
+        "glass23": {
+          "name": "&8#",
+          "data": 15,
+          "amount": 1,
+          "material": "STAINED_GLASS_PANE",
+          "slot": 43,
+          "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+        },
+        "glass24": {
+          "name": "&8#",
+          "data": 15,
+          "amount": 1,
+          "material": "STAINED_GLASS_PANE",
+          "slot": 44,
+          "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+        },
+        "glass25": {
+          "name": "&8#",
+          "data": 15,
+          "amount": 1,
+          "material": "STAINED_GLASS_PANE",
+          "slot": 45,
+          "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+        },
+        "glass26": {
+          "name": "&8#",
+          "data": 15,
+          "amount": 1,
+          "material": "STAINED_GLASS_PANE",
+          "slot": 46,
+          "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+        },
+        "glass27": {
+          "name": "&8#",
+          "data": 15,
+          "amount": 1,
+          "material": "STAINED_GLASS_PANE",
+          "slot": 47,
+          "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+        },
+        "glass28": {
+          "name": "&8#",
+          "data": 15,
+          "amount": 1,
+          "material": "STAINED_GLASS_PANE",
+          "slot": 48,
+          "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+        },
+        "glass29": {
+          "name": "&8#",
+          "data": 15,
+          "amount": 1,
+          "material": "STAINED_GLASS_PANE",
+          "slot": 49,
+          "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+        },
+        "glass30": {
+          "name": "&8#",
+          "data": 15,
+          "amount": 1,
+          "material": "STAINED_GLASS_PANE",
+          "slot": 50,
+          "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+        },
+        "glass31": {
+          "name": "&8#",
+          "data": 15,
+          "amount": 1,
+          "material": "STAINED_GLASS_PANE",
+          "slot": 51,
+          "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+        },
+        "glass32": {
+          "name": "&8#",
+          "data": 15,
+          "amount": 1,
+          "material": "STAINED_GLASS_PANE",
+          "slot": 52,
+          "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+        },
+        "item0": {
+          "slot": 11,
+          "_guiElementType": "pl.rosehc.controller.wrapper.platform.gui.drop.PlatformDropPreviewItemGuiElementWrapper"
+        },
+        "item1": {
+          "slot": 12,
+          "_guiElementType": "pl.rosehc.controller.wrapper.platform.gui.drop.PlatformDropPreviewItemGuiElementWrapper"
+        }
+      }
+    },
+    "chat_settings": {
+      "inventoryName": "&dUstawienia czatu",
+      "inventorySize": 45,
+      "elements": {
+        "global": {
+          "name": "&5&lWIADOMOŚCI GLOBALNE",
+          "enabledLore": [
+            "&8>> &7Status: &awłączony",
+            "&8>> &7Kliknij, aby &cwyłączyć &7tą wiadomość!"
+          ],
+          "disabledLore": [
+            "&8>> &7Status: &cwyłączony",
+            "&8>> &7Kliknij, aby &awłączyć &7tą wiadomość!"
+          ],
+          "enabledData": 5,
+          "disabledData": 14,
+          "material": "STAINED_GLASS_PANE",
+          "slot": 10,
+          "_guiElementType": "pl.rosehc.controller.wrapper.platform.gui.other.PlatformChatSettingSpigotGuiElementWrapper"
+        },
+        "itemShop": {
+          "name": "&6&lWIADOMOŚCI Z ITEMSHOPU",
+          "enabledLore": [
+            "&8>> &7Status: &awłączony",
+            "&8>> &7Kliknij, aby &cwyłączyć &7tą wiadomość!"
+          ],
+          "disabledLore": [
+            "&8>> &7Status: &cwyłączony",
+            "&8>> &7Kliknij, aby &awłączyć &7tą wiadomość!"
+          ],
+          "enabledData": 5,
+          "disabledData": 14,
+          "material": "STAINED_GLASS_PANE",
+          "slot": 12,
+          "_guiElementType": "pl.rosehc.controller.wrapper.platform.gui.other.PlatformChatSettingSpigotGuiElementWrapper"
+        },
+        "kills": {
+          "name": "&e&lWIADOMOŚCI O ZABÓJSTWACH",
+          "enabledLore": [
+            "&8>> &7Status: &awłączony",
+            "&8>> &7Kliknij, aby &cwyłączyć &7tą wiadomość!"
+          ],
+          "disabledLore": [
+            "&8>> &7Status: &cwyłączony",
+            "&8>> &7Kliknij, aby &awłączyć &7tą wiadomość!"
+          ],
+          "enabledData": 5,
+          "disabledData": 14,
+          "material": "STAINED_GLASS_PANE",
+          "slot": 14,
+          "_guiElementType": "pl.rosehc.controller.wrapper.platform.gui.other.PlatformChatSettingSpigotGuiElementWrapper"
+        },
+        "deaths": {
+          "name": "&e&lWIADOMOŚCI O ŚMIERCIACH",
+          "enabledLore": [
+            "&8>> &7Status: &awłączony",
+            "&8>> &7Kliknij, aby &cwyłączyć &7tą wiadomość!"
+          ],
+          "disabledLore": [
+            "&8>> &7Status: &cwyłączony",
+            "&8>> &7Kliknij, aby &awłączyć &7tą wiadomość!"
+          ],
+          "enabledData": 5,
+          "disabledData": 14,
+          "material": "STAINED_GLASS_PANE",
+          "slot": 16,
+          "_guiElementType": "pl.rosehc.controller.wrapper.platform.gui.other.PlatformChatSettingSpigotGuiElementWrapper"
+        },
+        "cases": {
+          "name": "&d&lWIADOMOŚCI O DROPIE SKRZYNEK",
+          "enabledLore": [
+            "&8>> &7Status: &awłączony",
+            "&8>> &7Kliknij, aby &cwyłączyć &7tą wiadomość!"
+          ],
+          "disabledLore": [
+            "&8>> &7Status: &cwyłączony",
+            "&8>> &7Kliknij, aby &awłączyć &7tą wiadomość!"
+          ],
+          "enabledData": 5,
+          "disabledData": 14,
+          "material": "STAINED_GLASS_PANE",
+          "slot": 29,
+          "_guiElementType": "pl.rosehc.controller.wrapper.platform.gui.other.PlatformChatSettingSpigotGuiElementWrapper"
+        },
+        "achievements": {
+          "name": "&f&lWIADOMOŚCI O ODEBRANIU OSIĄGNIĘĆ",
+          "enabledLore": [
+            "&8>> &7Status: &awłączony",
+            "&8>> &7Kliknij, aby &cwyłączyć &7tą wiadomość!"
+          ],
+          "disabledLore": [
+            "&8>> &7Status: &cwyłączony",
+            "&8>> &7Kliknij, aby &awłączyć &7tą wiadomość!"
+          ],
+          "enabledData": 5,
+          "disabledData": 14,
+          "material": "STAINED_GLASS_PANE",
+          "slot": 31,
+          "_guiElementType": "pl.rosehc.controller.wrapper.platform.gui.other.PlatformChatSettingSpigotGuiElementWrapper"
+        },
+        "rewards": {
+          "name": "&9&lWIADOMOŚCI O ODEBRANIU NAGRÓD",
+          "enabledLore": [
+            "&8>> &7Status: &awłączony",
+            "&8>> &7Kliknij, aby &cwyłączyć &7tą wiadomość!"
+          ],
+          "disabledLore": [
+            "&8>> &7Status: &cwyłączony",
+            "&8>> &7Kliknij, aby &awłączyć &7tą wiadomość!"
+          ],
+          "enabledData": 5,
+          "disabledData": 14,
+          "material": "STAINED_GLASS_PANE",
+          "slot": 32,
+          "_guiElementType": "pl.rosehc.controller.wrapper.platform.gui.other.PlatformChatSettingSpigotGuiElementWrapper"
+        },
+        "privateMessages": {
+          "name": "&9&lWIADOMOŚCI O ODEBRANIU NAGRÓD",
+          "enabledLore": [
+            "&8>> &7Status: &awłączony",
+            "&8>> &7Kliknij, aby &cwyłączyć &7tą wiadomość!"
+          ],
+          "disabledLore": [
+            "&8>> &7Status: &cwyłączony",
+            "&8>> &7Kliknij, aby &awłączyć &7tą wiadomość!"
+          ],
+          "enabledData": 5,
+          "disabledData": 14,
+          "material": "STAINED_GLASS_PANE",
+          "slot": 33,
+          "_guiElementType": "pl.rosehc.controller.wrapper.platform.gui.other.PlatformChatSettingSpigotGuiElementWrapper"
+        }
+      },
+      "fillElement": {
+        "name": "&8#",
+        "data": 15,
+        "amount": 1,
+        "material": "STAINED_GLASS_PANE",
+        "slot": 0,
+        "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+      }
+    },
+    "channel": {
+      "inventoryName": "&dWybierz kanał spawn'u",
+      "inventorySize": 27,
+      "elements": {
+        "spawn_1": {
+          "name": "&7Sektor: &d{SECTOR_NAME}",
+          "enabledLore": [
+            "",
+            " &7Graczy: &d{ONLINE_PLAYERS}",
+            " &7TPS: &r{TPS}",
+            " &7Ostatnia aktualizacja danych: &d{LAST_UPDATE} temu.",
+            "",
+            " &dKliknij, aby się połączyć!"
+          ],
+          "currentLore": [
+            "",
+            " &7Graczy: &d{ONLINE_PLAYERS}",
+            " &7TPS: &r{TPS}",
+            " &7Ostatnia aktualizacja danych: &d{LAST_UPDATE} temu.",
+            "",
+            " &dTutaj się znajdujesz!"
+          ],
+          "heavilyLoadedLore": [
+            "",
+            " &7Graczy: &d{ONLINE_PLAYERS}",
+            " &7TPS: &r{TPS}",
+            " &7Ostatnia aktualizacja danych: &d{LAST_UPDATE} temu.",
+            "",
+            " &cSektor jest aktualnie obciążony!"
+          ],
+          "disabledLore": [
+            "",
+            " &7Ostatnia aktualizacja danych: &d{LAST_UPDATE} temu.",
+            " &cSektor jest aktualnie niedostępny!"
+          ],
+          "enabledData": 5,
+          "currentData": 4,
+          "heavilyLoadedData": 7,
+          "disabledData": 14,
+          "material": "WOOL",
+          "slot": 11,
+          "_guiElementType": "pl.rosehc.controller.wrapper.platform.gui.other.PlatformChannelSpigotGuiElementWrapper"
+        },
+        "spawn_2": {
+          "name": "&7Sektor: &d{SECTOR_NAME}",
+          "enabledLore": [
+            "",
+            " &7Graczy: &d{ONLINE_PLAYERS}",
+            " &7TPS: &r{TPS}",
+            " &7Ostatnia aktualizacja danych: &d{LAST_UPDATE} temu.",
+            "",
+            " &dKliknij, aby się połączyć!"
+          ],
+          "currentLore": [
+            "",
+            " &7Graczy: &d{ONLINE_PLAYERS}",
+            " &7TPS: &r{TPS}",
+            " &7Ostatnia aktualizacja danych: &d{LAST_UPDATE} temu.",
+            "",
+            " &dTutaj się znajdujesz!"
+          ],
+          "heavilyLoadedLore": [
+            "",
+            " &7Graczy: &d{ONLINE_PLAYERS}",
+            " &7TPS: &r{TPS}",
+            " &7Ostatnia aktualizacja danych: &d{LAST_UPDATE} temu.",
+            "",
+            " &cSektor jest aktualnie obciążony!"
+          ],
+          "disabledLore": [
+            "",
+            " &7Ostatnia aktualizacja danych: &d{LAST_UPDATE} temu.",
+            " &cSektor jest aktualnie niedostępny!"
+          ],
+          "enabledData": 5,
+          "currentData": 4,
+          "heavilyLoadedData": 7,
+          "disabledData": 14,
+          "material": "WOOL",
+          "slot": 13,
+          "_guiElementType": "pl.rosehc.controller.wrapper.platform.gui.other.PlatformChannelSpigotGuiElementWrapper"
+        },
+        "spawn_3": {
+          "name": "&7Sektor: &d{SECTOR_NAME}",
+          "enabledLore": [
+            "",
+            " &7Graczy: &d{ONLINE_PLAYERS}",
+            " &7TPS: &r{TPS}",
+            " &7Ostatnia aktualizacja danych: &d{LAST_UPDATE} temu.",
+            "",
+            " &dKliknij, aby się połączyć!"
+          ],
+          "currentLore": [
+            "",
+            " &7Graczy: &d{ONLINE_PLAYERS}",
+            " &7TPS: &r{TPS}",
+            " &7Ostatnia aktualizacja danych: &d{LAST_UPDATE} temu.",
+            "",
+            " &dTutaj się znajdujesz!"
+          ],
+          "heavilyLoadedLore": [
+            "",
+            " &7Graczy: &d{ONLINE_PLAYERS}",
+            " &7TPS: &r{TPS}",
+            " &7Ostatnia aktualizacja danych: &d{LAST_UPDATE} temu.",
+            "",
+            " &cSektor jest aktualnie obciążony!"
+          ],
+          "disabledLore": [
+            "",
+            " &7Ostatnia aktualizacja danych: &d{LAST_UPDATE} temu.",
+            " &cSektor jest aktualnie niedostępny!"
+          ],
+          "enabledData": 5,
+          "currentData": 4,
+          "heavilyLoadedData": 7,
+          "disabledData": 14,
+          "material": "WOOL",
+          "slot": 15,
+          "_guiElementType": "pl.rosehc.controller.wrapper.platform.gui.other.PlatformChannelSpigotGuiElementWrapper"
+        }
+      },
+      "fillElement": {
+        "name": "&8#",
+        "data": 15,
+        "amount": 1,
+        "material": "STAINED_GLASS_PANE",
+        "slot": 0,
+        "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+      }
+    },
+    "drop_main": {
+      "inventoryName": "&dDROP (MENU)",
+      "inventorySize": 27,
+      "elements": {
+        "stone": {
+          "name": "&7&lDrop ze stone",
+          "data": 0,
+          "amount": 1,
+          "material": "STONE",
+          "slot": 11,
+          "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+        },
+        "magicCase": {
+          "name": "&5&lDrop z magicznych skrzynek",
+          "data": 0,
+          "amount": 1,
+          "material": "CHEST",
+          "slot": 13,
+          "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+        },
+        "cobbleX": {
+          "name": "&e&lDrop z CobbleX",
+          "data": 0,
+          "amount": 1,
+          "material": "MOSSY_COBBLESTONE",
+          "slot": 15,
+          "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+        }
+      },
+      "fillElement": {
+        "name": "&8#",
+        "data": 15,
+        "amount": 1,
+        "material": "STAINED_GLASS_PANE",
+        "slot": 0,
+        "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+      }
+    },
+    "disco": {
+      "inventoryName": "&dPrzejmowanie sejfu",
+      "inventorySize": 27,
+      "elements": {
+        "GRAY": {
+          "name": "&8&lGRAY",
+          "selectedLore": [
+            "&7Aktywny: &atak",
+            "&aTen tryb jest aktualnie aktywny!"
+          ],
+          "notSelectedLore": [
+            "&7Aktywny: &cnie",
+            "&aKliknij, aby wybrać ten tryb!"
+          ],
+          "leatherArmorColor": "#191919",
+          "material": "LEATHER_HELMET",
+          "slot": 10,
+          "_guiElementType": "pl.rosehc.controller.wrapper.platform.gui.other.PlatformDiscoEffectTypeSpigotGuiElementWrapper"
+        },
+        "ULTRA": {
+          "name": "&d&lULTRA",
+          "selectedLore": [
+            "&7Aktywny: &atak",
+            "&aTen tryb jest aktualnie aktywny!"
+          ],
+          "notSelectedLore": [
+            "&7Aktywny: &cnie",
+            "&aKliknij, aby wybrać ten tryb!"
+          ],
+          "leatherArmorColor": "#C5596C",
+          "material": "LEATHER_HELMET",
+          "slot": 12,
+          "_guiElementType": "pl.rosehc.controller.wrapper.platform.gui.other.PlatformDiscoEffectTypeSpigotGuiElementWrapper"
+        },
+        "SMOOTH": {
+          "name": "&4&lSMOOTH",
+          "selectedLore": [
+            "&7Aktywny: &atak",
+            "&aTen tryb jest aktualnie aktywny!"
+          ],
+          "notSelectedLore": [
+            "&7Aktywny: &cnie",
+            "&aKliknij, aby wybrać ten tryb!"
+          ],
+          "leatherArmorColor": "#993333",
+          "material": "LEATHER_HELMET",
+          "slot": 14,
+          "_guiElementType": "pl.rosehc.controller.wrapper.platform.gui.other.PlatformDiscoEffectTypeSpigotGuiElementWrapper"
+        },
+        "RANDOM": {
+          "name": "&5&lRANDOM",
+          "selectedLore": [
+            "&7Aktywny: &atak",
+            "&aTen tryb jest aktualnie aktywny!"
+          ],
+          "notSelectedLore": [
+            "&7Aktywny: &cnie",
+            "&aKliknij, aby wybrać ten tryb!"
+          ],
+          "leatherArmorColor": "#334CB2",
+          "material": "LEATHER_HELMET",
+          "slot": 16,
+          "_guiElementType": "pl.rosehc.controller.wrapper.platform.gui.other.PlatformDiscoEffectTypeSpigotGuiElementWrapper"
+        }
+      },
+      "fillElement": {
+        "name": "&8#",
+        "data": 15,
+        "amount": 1,
+        "material": "STAINED_GLASS_PANE",
+        "slot": 0,
+        "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+      }
+    },
+    "kit_list": {
+      "inventoryName": "&dLista dostępnych zestawów",
+      "inventorySize": 27,
+      "elements": {
+        "kitSAMPLE1": {
+          "name": "&cPierwszy kit ({KIT_NAME})",
+          "noPermissionLore": [
+            "&cNie posiadasz uprawnień do tego zestawu!",
+            "&cŻeby uzyskać do niego dostęp, musisz posiadać minimalnie rangę VIP"
+          ],
+          "cannotPickupLore": [
+            "&cNie możesz odebrać tego zestawu w tym momencie!",
+            "&cŻeby go odebrać musisz odczekać jeszcze {TIME}!"
+          ],
+          "canPickupLore": [
+            "&aMożesz odebrać ten zestaw!",
+            "&aAby to zrobić, kliknij w kita oraz kliknij",
+            "&ana specjalny item w gui od podglądu!"
+          ],
+          "data": 0,
+          "material": "STONE",
+          "slot": 12,
+          "_guiElementType": "pl.rosehc.controller.wrapper.platform.gui.kit.PlatformKitListPreviewGuiElementWrapper"
+        },
+        "kitSAMPLE2": {
+          "name": "&aDrugi kit ({KIT_NAME})",
+          "noPermissionLore": [
+            "&cNie posiadasz uprawnień do tego zestawu!",
+            "&cŻeby uzyskać do niego dostęp, musisz posiadać minimalnie rangę VIP"
+          ],
+          "cannotPickupLore": [
+            "&cNie możesz odebrać tego zestawu w tym momencie!",
+            "&cŻeby go odebrać musisz odczekać jeszcze {TIME}!"
+          ],
+          "canPickupLore": [
+            "&aMożesz odebrać ten zestaw!",
+            "&aAby to zrobić, kliknij w kita oraz kliknij",
+            "&ana specjalny item w gui od podglądu!"
+          ],
+          "data": 0,
+          "material": "COBBLESTONE",
+          "slot": 14,
+          "_guiElementType": "pl.rosehc.controller.wrapper.platform.gui.kit.PlatformKitListPreviewGuiElementWrapper"
+        }
+      },
+      "fillElement": {
+        "name": "&8#",
+        "data": 15,
+        "amount": 1,
+        "material": "STAINED_GLASS_PANE",
+        "slot": 0,
+        "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+      }
+    },
+    "crowbar_takeover": {
+      "inventoryName": "&dPrzejmowanie sejfu",
+      "inventorySize": 27,
+      "elements": {
+        "takeover": {
+          "slot": 13,
+          "_guiElementType": "pl.rosehc.controller.wrapper.platform.gui.other.PlatformCrowbarTakeoverSpigotGuiElementWrapper"
+        }
+      },
+      "fillElement": {
+        "name": "&8#",
+        "data": 15,
+        "amount": 1,
+        "material": "STAINED_GLASS_PANE",
+        "slot": 0,
+        "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+      }
+    },
+    "home": {
+      "inventoryName": "&dMenu zarządzania domami",
+      "inventorySize": 27,
+      "elements": {
+        "home1": {
+          "name": "&7Domek: &5#1",
+          "noPermissionLore": [
+            "&cNie posiadasz dostępu do tego domu!",
+            "&cŻeby uzyskać do niego dostęp, musisz posiadać minimalnie rangę VIP"
+          ],
+          "notSetLore": [
+            "&cTen domek nie jest aktualnie ustawiony!",
+            "&7Kliknij &dRPM &7aby go ustawić!"
+          ],
+          "alreadySetLore": [
+            "&7Posiadasz już tutaj dom! Kliknij &dLPM &7aby się do niego przeteleportować",
+            "&7lub &5RPM &7aby nadpisać lokalizację!"
+          ],
+          "noPermissionData": 1,
+          "notSetData": 8,
+          "alreadySetData": 10,
+          "material": "INK_SACK",
+          "slot": 10,
+          "_guiElementType": "pl.rosehc.controller.wrapper.platform.gui.other.PlatformHomeSpigotGuiElementWrapper"
+        },
+        "home2": {
+          "name": "&7Domek: &5#2",
+          "noPermissionLore": [
+            "&cNie posiadasz dostępu do tego domu!",
+            "&cŻeby uzyskać do niego dostęp, musisz posiadać minimalnie rangę VIP"
+          ],
+          "notSetLore": [
+            "&cTen domek nie jest aktualnie ustawiony!",
+            "&7Kliknij &dRPM &7aby go ustawić!"
+          ],
+          "alreadySetLore": [
+            "&7Posiadasz już tutaj dom! Kliknij &dLPM &7aby się do niego przeteleportować",
+            "&7lub &5RPM &7aby nadpisać lokalizację!"
+          ],
+          "noPermissionData": 1,
+          "notSetData": 8,
+          "alreadySetData": 10,
+          "material": "INK_SACK",
+          "slot": 12,
+          "_guiElementType": "pl.rosehc.controller.wrapper.platform.gui.other.PlatformHomeSpigotGuiElementWrapper"
+        },
+        "home3": {
+          "name": "&7Domek: &5#3",
+          "noPermissionLore": [
+            "&cNie posiadasz dostępu do tego domu!",
+            "&cŻeby uzyskać do niego dostęp, musisz posiadać minimalnie rangę VIP"
+          ],
+          "notSetLore": [
+            "&cTen domek nie jest aktualnie ustawiony!",
+            "&7Kliknij &dRPM &7aby go ustawić!"
+          ],
+          "alreadySetLore": [
+            "&7Posiadasz już tutaj dom! Kliknij &dLPM &7aby się do niego przeteleportować",
+            "&7lub &5RPM &7aby nadpisać lokalizację!"
+          ],
+          "noPermissionData": 1,
+          "notSetData": 8,
+          "alreadySetData": 10,
+          "material": "INK_SACK",
+          "slot": 14,
+          "_guiElementType": "pl.rosehc.controller.wrapper.platform.gui.other.PlatformHomeSpigotGuiElementWrapper"
+        },
+        "home4": {
+          "name": "&7Domek: &5#4",
+          "noPermissionLore": [
+            "&cNie posiadasz dostępu do tego domu!",
+            "&cŻeby uzyskać do niego dostęp, musisz posiadać minimalnie rangę VIP"
+          ],
+          "notSetLore": [
+            "&cTen domek nie jest aktualnie ustawiony!",
+            "&7Kliknij &dRPM &7aby go ustawić!"
+          ],
+          "alreadySetLore": [
+            "&7Posiadasz już tutaj dom! Kliknij &dLPM &7aby się do niego przeteleportować",
+            "&7lub &5RPM &7aby nadpisać lokalizację!"
+          ],
+          "noPermissionData": 1,
+          "notSetData": 8,
+          "alreadySetData": 10,
+          "material": "INK_SACK",
+          "slot": 16,
+          "_guiElementType": "pl.rosehc.controller.wrapper.platform.gui.other.PlatformHomeSpigotGuiElementWrapper"
+        }
+      },
+      "fillElement": {
+        "name": "&8#",
+        "data": 15,
+        "amount": 1,
+        "material": "STAINED_GLASS_PANE",
+        "slot": 0,
+        "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+      }
+    },
+    "kit_preview_SAMPLE1": {
+      "inventoryName": "&dZestaw {KIT_NAME}",
+      "inventorySize": 9,
+      "elements": {
+        "item1": {
+          "slot": 0,
+          "_guiElementType": "pl.rosehc.controller.wrapper.platform.gui.kit.PlatformKitPreviewGivenItemGuiElementWrapper"
+        },
+        "pickup": {
+          "name": "&aKliknij, aby odebrać!",
+          "noPermissionLore": [
+            "&cNie posiadasz uprawnień do tego zestawu!",
+            "&cŻeby uzyskać do niego dostęp, musisz posiadać minimalnie rangę VIP"
+          ],
+          "cannotPickupLore": [
+            "&cNie możesz odebrać tego zestawu w tym momencie!",
+            "&cŻeby go odebrać musisz odczekać jeszcze {TIME}!"
+          ],
+          "canPickupLore": [
+            "&aMożesz odebrać ten zestaw!",
+            "&aAby to zrobić, kliknij LPM!"
+          ],
+          "noPermissionData": 1,
+          "cannotPickupData": 8,
+          "canPickupData": 10,
+          "material": "INK_SACK",
+          "slot": 7,
+          "_guiElementType": "pl.rosehc.controller.wrapper.platform.gui.kit.PlatformKitPreviewPickupGuiElementWrapper"
+        },
+        "back": {
+          "name": "&cPowrót do menu głównego",
+          "data": 0,
+          "amount": 1,
+          "material": "BARRIER",
+          "slot": 8,
+          "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+        }
+      }
+    },
+    "drop_stone": {
+      "inventoryName": "&dDROP (STONE)",
+      "inventorySize": 27,
+      "elements": {
+        "itemDIAMENT": {
+          "name": "&9Diament",
+          "enabledLore": [
+            "&8>> &7Szansa: &d{CHANCE}",
+            "&8>> &7Exp: &d{EXP}",
+            "&8>> &7Czy posiada fortunę: &atak",
+            "&8>> &7Minimalna ilość do wydropienia: &d{MIN_AMOUNT}",
+            "&8>> &7Maksymalna ilość do wydropienia: &d{MAX_AMOUNT}",
+            "&8>> &7Dropi od &d{MIN_Y} &7do &d{MAX_Y} &7poziomu Y!",
+            "&8>> &7Czy włączony: &atak"
+          ],
+          "disabledLore": [
+            "&8>> &7Szansa: &d{CHANCE}",
+            "&8>> &7Exp: &d{EXP}",
+            "&8>> &7Czy posiada fortunę: &atak",
+            "&8>> &7Minimalna ilość do wydropienia: &d{MIN_AMOUNT}",
+            "&8>> &7Maksymalna ilość do wydropienia: &d{MAX_AMOUNT}",
+            "&8>> &7Dropi od &d{MIN_Y} &7do &d{MAX_Y} &7poziomu Y!",
+            "&8>> &7Czy włączony: &cnie"
+          ],
+          "slot": 0,
+          "_guiElementType": "pl.rosehc.controller.wrapper.platform.gui.drop.PlatformDropStoneDropItemGuiElementWrapper"
+        },
+        "cobbleStone": {
+          "name": "&cCobbleStone",
+          "enabledLore": [
+            "&8>> &7Aktywny: &atak",
+            "&8>> &7Kliknij, aby &cwyłączyć&7!"
+          ],
+          "disabledLore": [
+            "&8>> &7Aktywny: &cnie",
+            "&8>> &7Kliknij, aby &awłączyć&7!"
+          ],
+          "slot": 23,
+          "_guiElementType": "pl.rosehc.controller.wrapper.platform.gui.drop.PlatformDropStoneDropCobbleStoneItemGuiElementWrapper"
+        },
+        "enable_all": {
+          "name": "&aKliknij, aby włączyć wszystkie dropy!",
+          "data": 10,
+          "amount": 1,
+          "material": "INK_SACK",
+          "slot": 24,
+          "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+        },
+        "disable_all": {
+          "name": "&cKliknij, aby wyłączyć wszystkie dropy!",
+          "data": 1,
+          "amount": 1,
+          "material": "INK_SACK",
+          "slot": 25,
+          "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+        },
+        "back": {
+          "name": "&cKliknij, aby powrócić do menu głównego!",
+          "data": 0,
+          "amount": 1,
+          "material": "FENCE_GATE",
+          "slot": 26,
+          "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+        }
+      },
+      "fillElement": {
+        "name": "&8#",
+        "data": 15,
+        "amount": 1,
+        "material": "STAINED_GLASS_PANE",
+        "slot": 0,
+        "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+      }
+    },
+    "deposit": {
+      "inventoryName": "&dDepozyt",
+      "inventorySize": 45,
+      "elements": {
+        "itemGOLDEN_HEADS": {
+          "name": "&6&lGHEADY",
+          "lore": [
+            "",
+            "&8>> &7Limit: &d{LIMIT}",
+            "&8>> &7Posiadasz w depozycie: &d{AMOUNT_IN_DEPOSIT}",
+            "",
+            "&8>> &7Kliknij, aby &dwypłacić&7!"
+          ],
+          "data": 0,
+          "slot": 11,
+          "_guiElementType": "pl.rosehc.controller.wrapper.platform.gui.deposit.PlatformDepositItemSpigotGuiElementWrapper"
+        },
+        "itemGOLDEN_APPLES": {
+          "name": "&e&lREFILE",
+          "lore": [
+            "",
+            "&8>> &7Limit: &d{LIMIT}",
+            "&8>> &7Posiadasz w depozycie: &d{AMOUNT_IN_DEPOSIT}",
+            "",
+            "&8>> &7Kliknij, aby &dwypłacić&7!"
+          ],
+          "data": 0,
+          "slot": 13,
+          "_guiElementType": "pl.rosehc.controller.wrapper.platform.gui.deposit.PlatformDepositItemSpigotGuiElementWrapper"
+        },
+        "itemENDER_PEARLS": {
+          "name": "&5&lPERŁY",
+          "lore": [
+            "",
+            "&8>> &7Limit: &d{LIMIT}",
+            "&8>> &7Posiadasz w depozycie: &d{AMOUNT_IN_DEPOSIT}",
+            "",
+            "&8>> &7Kliknij, aby &dwypłacić&7!"
+          ],
+          "data": 0,
+          "slot": 15,
+          "_guiElementType": "pl.rosehc.controller.wrapper.platform.gui.deposit.PlatformDepositItemSpigotGuiElementWrapper"
+        },
+        "itemSNOWBALLS": {
+          "name": "&f&lŚNIEŻKI",
+          "lore": [
+            "",
+            "&8>> &7Limit: &d{LIMIT}",
+            "&8>> &7Posiadasz w depozycie: &d{AMOUNT_IN_DEPOSIT}",
+            "",
+            "&8>> &7Kliknij, aby &dwypłacić&7!"
+          ],
+          "data": 0,
+          "slot": 21,
+          "_guiElementType": "pl.rosehc.controller.wrapper.platform.gui.deposit.PlatformDepositItemSpigotGuiElementWrapper"
+        },
+        "itemFISHING_RODS": {
+          "name": "&a&lWĘDKI",
+          "lore": [
+            "",
+            "&8>> &7Limit: &d{LIMIT}",
+            "&8>> &7Posiadasz w depozycie: &d{AMOUNT_IN_DEPOSIT}",
+            "",
+            "&8>> &7Kliknij, aby &dwypłacić&7!"
+          ],
+          "data": 0,
+          "slot": 23,
+          "_guiElementType": "pl.rosehc.controller.wrapper.platform.gui.deposit.PlatformDepositItemSpigotGuiElementWrapper"
+        },
+        "withdraw_all": {
+          "name": "&dWypłać do limitu",
+          "data": 0,
+          "amount": 1,
+          "material": "HOPPER",
+          "slot": 40,
+          "_guiElementType": "pl.rosehc.controller.wrapper.platform.gui.deposit.PlatformDepositWithdrawAllSpigotGuiElementWrapper"
+        }
+      },
+      "fillElement": {
+        "name": "&8#",
+        "data": 15,
+        "amount": 1,
+        "material": "STAINED_GLASS_PANE",
+        "slot": 0,
+        "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+      }
+    },
+    "drop_cobbleX": {
+      "inventoryName": "&dDROP (COBBLEX)",
+      "inventorySize": 54,
+      "elements": {
+        "back": {
+          "name": "&cKliknij, aby powrócić do menu głównego!",
+          "data": 0,
+          "amount": 1,
+          "material": "FENCE_GATE",
+          "slot": 53,
+          "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+        },
+        "glass0": {
+          "name": "&8#",
+          "data": 15,
+          "amount": 1,
+          "material": "STAINED_GLASS_PANE",
+          "slot": 0,
+          "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+        },
+        "glass1": {
+          "name": "&8#",
+          "data": 15,
+          "amount": 1,
+          "material": "STAINED_GLASS_PANE",
+          "slot": 1,
+          "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+        },
+        "glass2": {
+          "name": "&8#",
+          "data": 15,
+          "amount": 1,
+          "material": "STAINED_GLASS_PANE",
+          "slot": 2,
+          "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+        },
+        "glass3": {
+          "name": "&8#",
+          "data": 15,
+          "amount": 1,
+          "material": "STAINED_GLASS_PANE",
+          "slot": 3,
+          "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+        },
+        "glass4": {
+          "name": "&8#",
+          "data": 15,
+          "amount": 1,
+          "material": "STAINED_GLASS_PANE",
+          "slot": 4,
+          "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+        },
+        "glass5": {
+          "name": "&8#",
+          "data": 15,
+          "amount": 1,
+          "material": "STAINED_GLASS_PANE",
+          "slot": 5,
+          "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+        },
+        "glass6": {
+          "name": "&8#",
+          "data": 15,
+          "amount": 1,
+          "material": "STAINED_GLASS_PANE",
+          "slot": 6,
+          "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+        },
+        "glass7": {
+          "name": "&8#",
+          "data": 15,
+          "amount": 1,
+          "material": "STAINED_GLASS_PANE",
+          "slot": 7,
+          "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+        },
+        "glass8": {
+          "name": "&8#",
+          "data": 15,
+          "amount": 1,
+          "material": "STAINED_GLASS_PANE",
+          "slot": 8,
+          "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+        },
+        "glass9": {
+          "name": "&8#",
+          "data": 15,
+          "amount": 1,
+          "material": "STAINED_GLASS_PANE",
+          "slot": 9,
+          "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+        },
+        "glass10": {
+          "name": "&8#",
+          "data": 15,
+          "amount": 1,
+          "material": "STAINED_GLASS_PANE",
+          "slot": 10,
+          "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+        },
+        "glass11": {
+          "name": "&8#",
+          "data": 15,
+          "amount": 1,
+          "material": "STAINED_GLASS_PANE",
+          "slot": 16,
+          "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+        },
+        "glass12": {
+          "name": "&8#",
+          "data": 15,
+          "amount": 1,
+          "material": "STAINED_GLASS_PANE",
+          "slot": 17,
+          "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+        },
+        "glass13": {
+          "name": "&8#",
+          "data": 15,
+          "amount": 1,
+          "material": "STAINED_GLASS_PANE",
+          "slot": 18,
+          "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+        },
+        "glass14": {
+          "name": "&8#",
+          "data": 15,
+          "amount": 1,
+          "material": "STAINED_GLASS_PANE",
+          "slot": 19,
+          "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+        },
+        "glass15": {
+          "name": "&8#",
+          "data": 15,
+          "amount": 1,
+          "material": "STAINED_GLASS_PANE",
+          "slot": 25,
+          "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+        },
+        "glass16": {
+          "name": "&8#",
+          "data": 15,
+          "amount": 1,
+          "material": "STAINED_GLASS_PANE",
+          "slot": 26,
+          "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+        },
+        "glass17": {
+          "name": "&8#",
+          "data": 15,
+          "amount": 1,
+          "material": "STAINED_GLASS_PANE",
+          "slot": 27,
+          "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+        },
+        "glass18": {
+          "name": "&8#",
+          "data": 15,
+          "amount": 1,
+          "material": "STAINED_GLASS_PANE",
+          "slot": 28,
+          "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+        },
+        "glass19": {
+          "name": "&8#",
+          "data": 15,
+          "amount": 1,
+          "material": "STAINED_GLASS_PANE",
+          "slot": 34,
+          "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+        },
+        "glass20": {
+          "name": "&8#",
+          "data": 15,
+          "amount": 1,
+          "material": "STAINED_GLASS_PANE",
+          "slot": 35,
+          "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+        },
+        "glass21": {
+          "name": "&8#",
+          "data": 15,
+          "amount": 1,
+          "material": "STAINED_GLASS_PANE",
+          "slot": 36,
+          "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+        },
+        "glass22": {
+          "name": "&8#",
+          "data": 15,
+          "amount": 1,
+          "material": "STAINED_GLASS_PANE",
+          "slot": 37,
+          "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+        },
+        "glass23": {
+          "name": "&8#",
+          "data": 15,
+          "amount": 1,
+          "material": "STAINED_GLASS_PANE",
+          "slot": 43,
+          "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+        },
+        "glass24": {
+          "name": "&8#",
+          "data": 15,
+          "amount": 1,
+          "material": "STAINED_GLASS_PANE",
+          "slot": 44,
+          "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+        },
+        "glass25": {
+          "name": "&8#",
+          "data": 15,
+          "amount": 1,
+          "material": "STAINED_GLASS_PANE",
+          "slot": 45,
+          "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+        },
+        "glass26": {
+          "name": "&8#",
+          "data": 15,
+          "amount": 1,
+          "material": "STAINED_GLASS_PANE",
+          "slot": 46,
+          "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+        },
+        "glass27": {
+          "name": "&8#",
+          "data": 15,
+          "amount": 1,
+          "material": "STAINED_GLASS_PANE",
+          "slot": 47,
+          "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+        },
+        "glass28": {
+          "name": "&8#",
+          "data": 15,
+          "amount": 1,
+          "material": "STAINED_GLASS_PANE",
+          "slot": 48,
+          "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+        },
+        "glass29": {
+          "name": "&8#",
+          "data": 15,
+          "amount": 1,
+          "material": "STAINED_GLASS_PANE",
+          "slot": 49,
+          "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+        },
+        "glass30": {
+          "name": "&8#",
+          "data": 15,
+          "amount": 1,
+          "material": "STAINED_GLASS_PANE",
+          "slot": 50,
+          "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+        },
+        "glass31": {
+          "name": "&8#",
+          "data": 15,
+          "amount": 1,
+          "material": "STAINED_GLASS_PANE",
+          "slot": 51,
+          "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+        },
+        "glass32": {
+          "name": "&8#",
+          "data": 15,
+          "amount": 1,
+          "material": "STAINED_GLASS_PANE",
+          "slot": 52,
+          "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+        },
+        "item0": {
+          "slot": 11,
+          "_guiElementType": "pl.rosehc.controller.wrapper.platform.gui.drop.PlatformDropPreviewItemGuiElementWrapper"
+        },
+        "item1": {
+          "slot": 12,
+          "_guiElementType": "pl.rosehc.controller.wrapper.platform.gui.drop.PlatformDropPreviewItemGuiElementWrapper"
+        }
+      }
+    },
+    "kit_preview_SAMPLE2": {
+      "inventoryName": "&dZestaw {KIT_NAME}",
+      "inventorySize": 9,
+      "elements": {
+        "item1": {
+          "slot": 0,
+          "_guiElementType": "pl.rosehc.controller.wrapper.platform.gui.kit.PlatformKitPreviewGivenItemGuiElementWrapper"
+        },
+        "pickup": {
+          "name": "&aKliknij, aby odebrać!",
+          "noPermissionLore": [
+            "&cNie posiadasz uprawnień do tego zestawu!",
+            "&cŻeby uzyskać do niego dostęp, musisz posiadać minimalnie rangę VIP"
+          ],
+          "cannotPickupLore": [
+            "&cNie możesz odebrać tego zestawu w tym momencie!",
+            "&cŻeby go odebrać musisz odczekać jeszcze {TIME}!"
+          ],
+          "canPickupLore": [
+            "&aMożesz odebrać ten zestaw!",
+            "&aAby to zrobić, kliknij LPM!"
+          ],
+          "noPermissionData": 1,
+          "cannotPickupData": 8,
+          "canPickupData": 10,
+          "material": "INK_SACK",
+          "slot": 7,
+          "_guiElementType": "pl.rosehc.controller.wrapper.platform.gui.kit.PlatformKitPreviewPickupGuiElementWrapper"
+        },
+        "back": {
+          "name": "&cPowrót do menu głównego",
+          "data": 0,
+          "amount": 1,
+          "material": "BARRIER",
+          "slot": 8,
+          "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+        }
+      }
+    }
+  },
+  "kits": [
+    {
+      "name": "SAMPLE1",
+      "time": "10m",
+      "items": [
+        {
+          "id": 1,
+          "material": "DIAMOND",
+          "name": "&cDiament",
+          "lore": [],
+          "enchantments": [],
+          "data": 0,
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "name": "SAMPLE2",
+      "time": "2h4m",
+      "items": [
+        {
+          "id": 1,
+          "material": "DIAMOND",
+          "name": "&cDiament ale magiczny taki",
+          "lore": [],
+          "enchantments": [
+            {
+              "enchantmentName": "DAMAGE_ALL",
+              "enchantmentLevel": 5
+            }
+          ],
+          "data": 0,
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "limits": {
+    "GOLDEN_HEADS": 1,
+    "GOLDEN_APPLES": 12,
+    "ENDER_PEARLS": 3,
+    "SNOWBALLS": 8,
+    "FISHING_RODS": 1
+  },
+  "slots": {
+    "proxy_slots": 2000,
+    "spigot_slots": 500
+  },
+  "spawn_scoreboard": {
+    "title": "&5&lRose&f&lHc&f&l&7&l.pl",
+    "lines": [
+      "",
+      " &fZnajdujesz się na",
+      " kanale: &d{SECTOR_NAME}",
+      "",
+      " &fGraczy: &d{ONLINE_PLAYERS}&7/&d{MAX_PLAYERS}",
+      " &fTPS: &r{FORMATTED_TPS}",
+      "",
+      " &fAby zmienić kanał spawna",
+      " &fskorzystaj z komendy &d/ch"
+    ]
+  },
+  "end_scoreboard": {
+    "title": "&5&lRose&f&lHc&f&l&7&l.pl",
+    "lines": [
+      "",
+      " &fZnajdujesz się na",
+      " sektorze: &d{SECTOR_NAME}",
+      "",
+      " &fGraczy: &d{ONLINE_PLAYERS}&7/&d{MAX_PLAYERS}",
+      " &fTPS: &r{FORMATTED_TPS}",
+      "",
+      " &fZmiana miejsca teleportacji",
+      " &fportalu za: &d{TELEPORTATION_POINT_CHANGE_TIME}",
+      " &fZmiana położenia portalu",
+      " &fza: &d{PORTAL_POINT_CHANGE_TIME}"
+    ]
+  },
+  "blocked_commands": {
+    "mainBlockedCommands": [
+      "/me",
+      "/minecraft:me",
+      "/bukkit:me"
+    ],
+    "combatAllowedCommands": [
+      "/help",
+      "/pomoc",
+      "/vip",
+      "/svip",
+      "/yt",
+      "/tell",
+      "/msg",
+      "/m",
+      "/reply",
+      "/r"
+    ]
+  },
+  "custom_commands": [
+    {
+      "name": "help",
+      "description": "Wszystkie komendy",
+      "aliases": [
+        "pomoc"
+      ],
+      "messages": [
+        "&8---------- [ &fPOMOC &8] ----------",
+        "&8>> &d/gildie &7- Informacje dot. gildii",
+        "&8>> &d/drop &7- Informacje o dropie",
+        "&8>> &d/cc &7- Możliwość zarządzania widocznością wiadomości chatu",
+        "&8>> &d/cx &7- Automatyczne tworzenia CobbleX z 9 stacków cobblestone",
+        "&8>> &d/os &7- Zdobywanie nagród za różne osiągnięcia",
+        "&8>> &d/schowek &7- Znajduje się w nim nadmiar twoich limitów",
+        "&8>> &d/craft &7- Lista wszystkich craftingów dostępnych na serwerze",
+        "&8>> &d/home &7- Lista wszystkich twoich ustawionych domów",
+        "&8>> &d/wymiana &7- Możliwość wymiany z innym graczem na spawnie",
+        "&8>> &d/naprawkilof &7- Naprawia ci kilof w zamian za 30lvl i 32 diamenty",
+        "&8>> &d/resetujranking &7- Umożliwia zresetowanie twoich statystyk",
+        "&8>> &d/kit &7- Komenda umożliwiająca odebranie różnych kitów",
+        "&8>> &d/incognito &7- Komenda dzięki której możesz ukryć swój nick itd.",
+        "&8>> &d/media &7- Informacje o randze &cMEDIA",
+        "&8>> &d/vip &7- Informacje o randze &3VIP",
+        "&8>> &d/svip &7- Informacje o randze &bSVIP",
+        "&8>> &d/champion &7- Informacje o randze &6CHAMPION",
+        "&8---------- [ &fPOMOC &8] ----------"
+      ]
+    },
+    {
+      "name": "vip",
+      "messages": [
+        "&8---------- [ &3VIP &8] ----------",
+        "&8>> &fPrzykład Prefixu przy nicku: &3VIP &7{PLAYER_NAME}",
+        "&8>> &fRanga &3VIP &fposiada:",
+        "&8>> &fDostęp do zestawu VIP",
+        "&8>> &fMniejsze itemy na gildie o 15%",
+        "&8>> &fZwiększony drop o 10%",
+        "&8>> &fMożliwość zrobienia 2 /sethome",
+        "&8>> &fDostęp do /repair",
+        "&8>> &fDostęp do /wb",
+        "&8>> &fDostęp do /ec",
+        "&8>> &fRangę możesz zakupić na https://rosehc.pl/sklep",
+        "&8---------- [ &3VIP &8] ----------"
+      ]
+    },
+    {
+      "name": "svip",
+      "messages": [
+        "&8---------- [ &bSVIP &8] ----------",
+        "&8>> &fPrzykład Prefixu przy nicku: &bSVIP &7{PLAYER_NAME}",
+        "&8>> &fRanga &bSVIP &fposiada:",
+        "&8>> &fDostęp do zestawu &bSVIP",
+        "&8>> &fMniejsze itemy na gildie o 25%",
+        "&8>> &fZwiększony drop o 15%",
+        "&8>> &fMożliwość zrobienia 3 /sethome",
+        "&8>> &fDostęp do /repair",
+        "&8>> &fDostęp do /wb",
+        "&8>> &fDostęp do /ec",
+        "&8>> &fRangę możesz zakupić na https://rosehc.pl/sklep",
+        "&8---------- [ &bSVIP &8] ----------"
+      ]
+    },
+    {
+      "name": "champion",
+      "messages": [
+        "&8---------- [ CHAMPION ] ----------",
+        "&8>> &fPrzykład Prefixu przy nicku: &6CHAMPION &7{PLAYER_NAME}",
+        "&8>> &fRanga &6CHAMPION &fposiada:",
+        "&8>> &fDostęp do zestawu &6CHAMPION",
+        "&8>> &fMniejsze itemy na gildie o 50%",
+        "&8>> &fZwiększony drop o 25%",
+        "&8>> &fMożliwość zrobienia 4 /sethome",
+        "&8>> &fDostęp do /repair",
+        "&8>> &fDostęp do /wb",
+        "&8>> &fDostęp do /ec",
+        "&8>> &fRangę możesz zakupić na https://rosehc.pl/sklep",
+        "&8---------- [ CHAMPION ] ----------"
+      ]
+    },
+    {
+      "name": "media",
+      "messages": [
+        "&8---------- [ MEDIA ] ----------",
+        "&8>> &fPrzykład Prefixu przy nicku: &cMEDIA &7{PLAYER_NAME}",
+        "&8>> &fRanga &cMEDIA &fposiada:",
+        "&8>> &fDostęp do zestawu &6CHAMPION",
+        "&8>> &fMniejsze itemy na gildie o 50%",
+        "&8>> &fZwiększony drop o 25%",
+        "&8>> &fMożliwość zrobienia 4 /sethome",
+        "&8>> &fDostęp do /repair",
+        "&8>> &fDostęp do /wb",
+        "&8>> &fDostęp do /ec",
+        "&8>> &fJesteś twórcą? Zgłoś się na discordzie! https://dc.rosehc.pl",
+        "&8---------- [ MEDIA ] ----------"
+      ]
+    },
+    {
+      "name": "g pomoc",
+      "aliases": [
+        "g",
+        "g help"
+      ],
+      "messages": [
+        "&8---------- [ GILDIE ] ----------",
+        "&8>> &d/g panel &7- &fPanel do zarządzania gildią.",
+        "&8>> &d/g itemy &7- Wyświetla wszystkie potrzebne itemy na zalożenie.",
+        "&8>> &d/g zaloz <TAG> <NAZWA> &7- Zakłada gildię o podanym tagu i nazwie.",
+        "&8>> &d/g dolacz &7- Dołącza do gildii.",
+        "&8>> &d/g opusc &7- Opuszcza gildie.",
+        "&8>> &d/g zapros <nick> &7- Zaprasza gracza do gildii.",
+        "&8>> &d/g zapros * &7- Zaprasza wszystkich graczy w promieniu 5 kratek.",
+        "&8>> &d/g wyrzuc <NICK> &7- Wyrzuca gracza z gildii.",
+        "&8>> &d/g odnow &7- Odnawia termin gildii.",
+        "&8>> &d/g ustawdom &7- Ustawia dom gildii.",
+        "&8>> &d/g baza &7- Teleportuje na bazę.",
+        "&8>> &d/g wolnemiejsce &7- Pokazuję wolne miejsce na zalożenie gildii.",
+        "&8>> &d/g ff &7- Włącza/wyłącza PVP w gildii",
+        "&8>> &d/g pp &7- Wyświetla każdemu członkowi waypoint z twoją pozycją",
+        "&8>> &d/g ppa &7- Wyświetla każdemu sojusznikowi waypoint z twoją pozycją",
+        "&8>> &d/g powiadomienie &7- Ustawia wiadomość widoczną przy wejściu na serwer",
+        "&8>> &d/g alert &7- Wyświetla wiadomość na środku ekranu dla członków gildii",
+        "&8>> &d! <WIADOMOŚĆ> &7- Chat gildyjny",
+        "&8>> &d! <WIADOMOŚĆ> &7- Chat sojuszniczy",
+        "&8---------- [ GILDIE ] ----------"
+      ]
+    }
+  ],
+  "custom_items": {
+    "custom_crafts": [
+      {
+        "result": {
+          "normal_item": {
+            "data": 0,
+            "amount": 1
+          },
+          "custom_item": "GHEAD"
+        },
+        "ingredients": {
+          "0": {
+            "normal_item": {
+              "material": "GOLD_BLOCK",
+              "data": 0,
+              "amount": 1
+            }
+          },
+          "1": {
+            "normal_item": {
+              "material": "GOLD_BLOCK",
+              "data": 0,
+              "amount": 1
+            }
+          },
+          "2": {
+            "normal_item": {
+              "material": "GOLD_BLOCK",
+              "data": 0,
+              "amount": 1
+            }
+          },
+          "3": {
+            "normal_item": {
+              "material": "GOLD_BLOCK",
+              "data": 0,
+              "amount": 1
+            }
+          },
+          "4": {
+            "normal_item": {
+              "material": "GOLD_BLOCK",
+              "data": 0,
+              "amount": 1
+            }
+          },
+          "5": {
+            "normal_item": {
+              "material": "SKULL_ITEM",
+              "data": 3,
+              "amount": 1
+            }
+          },
+          "6": {
+            "normal_item": {
+              "material": "GOLD_BLOCK",
+              "data": 0,
+              "amount": 1
+            }
+          },
+          "7": {
+            "normal_item": {
+              "material": "GOLD_BLOCK",
+              "data": 0,
+              "amount": 1
+            }
+          },
+          "8": {
+            "normal_item": {
+              "material": "GOLD_BLOCK",
+              "data": 0,
+              "amount": 1
+            }
+          }
+        }
+      },
+      {
+        "result": {
+          "normal_item": {
+            "data": 0,
+            "amount": 1
+          },
+          "custom_item": "COBBLEX"
+        },
+        "ingredients": {
+          "0": {
+            "normal_item": {
+              "material": "COBBLESTONE",
+              "data": 0,
+              "amount": 64
+            }
+          },
+          "1": {
+            "normal_item": {
+              "material": "COBBLESTONE",
+              "data": 0,
+              "amount": 64
+            }
+          },
+          "2": {
+            "normal_item": {
+              "material": "COBBLESTONE",
+              "data": 0,
+              "amount": 64
+            }
+          },
+          "3": {
+            "normal_item": {
+              "material": "COBBLESTONE",
+              "data": 0,
+              "amount": 64
+            }
+          },
+          "4": {
+            "normal_item": {
+              "material": "COBBLESTONE",
+              "data": 0,
+              "amount": 64
+            }
+          },
+          "5": {
+            "normal_item": {
+              "material": "COBBLESTONE",
+              "data": 0,
+              "amount": 64
+            }
+          },
+          "6": {
+            "normal_item": {
+              "material": "COBBLESTONE",
+              "data": 0,
+              "amount": 64
+            }
+          },
+          "7": {
+            "normal_item": {
+              "material": "COBBLESTONE",
+              "data": 0,
+              "amount": 64
+            }
+          },
+          "8": {
+            "normal_item": {
+              "material": "COBBLESTONE",
+              "data": 0,
+              "amount": 64
+            }
+          }
+        }
+      },
+      {
+        "result": {
+          "normal_item": {
+            "data": 0,
+            "amount": 1
+          },
+          "custom_item": "STONE_GENERATOR"
+        },
+        "ingredients": {
+          "0": {
+            "normal_item": {
+              "material": "STONE",
+              "data": 0,
+              "amount": 1
+            }
+          },
+          "1": {
+            "normal_item": {
+              "material": "STONE",
+              "data": 0,
+              "amount": 1
+            }
+          },
+          "2": {
+            "normal_item": {
+              "material": "STONE",
+              "data": 0,
+              "amount": 1
+            }
+          },
+          "3": {
+            "normal_item": {
+              "material": "STONE",
+              "data": 0,
+              "amount": 1
+            }
+          },
+          "4": {
+            "normal_item": {
+              "material": "DIAMOND",
+              "data": 0,
+              "amount": 1
+            }
+          },
+          "5": {
+            "normal_item": {
+              "material": "STONE",
+              "data": 0,
+              "amount": 1
+            }
+          },
+          "6": {
+            "normal_item": {
+              "material": "STONE",
+              "data": 0,
+              "amount": 1
+            }
+          },
+          "7": {
+            "normal_item": {
+              "material": "STONE",
+              "data": 0,
+              "amount": 1
+            }
+          },
+          "8": {
+            "normal_item": {
+              "material": "STONE",
+              "data": 0,
+              "amount": 1
+            }
+          }
+        }
+      }
+    ],
+    "reward_items": [
+      {
+        "normal_item": {
+          "material": "CHEST",
+          "data": 0,
+          "amount": 3
+        },
+        "custom_item": "MAGIC_CASE"
+      }
+    ],
+    "first_join_items": [
+      {
+        "material": "STONE_PICKAXE",
+        "data": 0,
+        "amount": 1
+      },
+      {
+        "material": "COOKED_BEEF",
+        "data": 0,
+        "amount": 128
+      }
+    ],
+    "respawn_items": [
+      {
+        "material": "COOKED_BEEF",
+        "data": 0,
+        "amount": 128
+      }
+    ],
+    "golden_apple_effects": [
+      {
+        "effect_type": "ABSORPTION",
+        "amplifier": 1,
+        "duration": 120
+      },
+      {
+        "effect_type": "REGENERATION",
+        "amplifier": 1,
+        "duration": 5
+      }
+    ],
+    "golden_head": {
+      "name": "&6GHEAD",
+      "lore": [],
+      "enchantments": [],
+      "potion_effects": [
+        {
+          "effect_type": "REGENERATION",
+          "amplifier": 1,
+          "duration": 14
+        },
+        {
+          "effect_type": "SPEED",
+          "amplifier": 1,
+          "duration": 15
+        },
+        {
+          "effect_type": "FIRE_RESISTANCE",
+          "amplifier": 0,
+          "duration": 120
+        },
+        {
+          "effect_type": "absorption",
+          "amplifier": 1,
+          "duration": 120
+        },
+        {
+          "effect_type": "DAMAGE_RESISTANCE",
+          "amplifier": 0,
+          "duration": 120
+        }
+      ],
+      "skin_value": "ewogICJ0aW1lc3RhbXAiIDogMTY1MjczNzE0ODkzNywKICAicHJvZmlsZUlkIiA6ICI2NmE2YTZhNzczNDM0NzdiOTUwZTE2YzE3ZmJjYjFmNyIsCiAgInByb2ZpbGVOYW1lIiA6ICJzcXVlcnUiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjk4Nzg4NTM2NTRjM2JiMjZmZDMzZTgwZjhlZDNjZGYwM2FiMzI0N2Y3MzY3ODQ2NGUwNmRhMTQzZGJkMGMxNyIKICAgIH0KICB9Cn0=",
+      "skin_signature": "QmEXDzcsLHC9PQJKe7YVLXLi/HNmoe35LLBPi+Vr0L8frci0cZKIFgBBGeg8Yrf+WAAmpw6iVj+37bbqGFJzKjykMX19GTQ8vGWWr3D28ySncXE4FAeLfjLdROKbvA8o2sZKaZImwFUNbMbizWGlfPzvMQ2D1gdQlyEP4jwH8Vi50R8haEVtyGnCVJ6FBFhtr0xNM4ecREiXlUPSCdqwvpYHB98oiWxmCm+ynJmEIr3eJFrIn16ICIgU3tWJpIB8WnZKjkVefMbkWrCE8b+AibUieXSwcowS/6li7kEa9LOuESnabjhbQOQr2zUvAeQuI/qVQ2HmuUo6BSxUs2L5K2zqY6ubA6DQ79cBVXcV5jen4+3zDulCoLBVRyxm5XoTMReaqTJR6pDJT5NrWpS+Gv1saweQDA23u6TOGV3yeI9ExTTVXz/6h0cyFfEeGMgBL9xHpf7tRGHoS29O8YnNHIwwFK8k88RVdg3XpX3ky0JJ44uCX8eNqkxnKmiXmqaINSmrkU6qZmAUb63oMr0PH98eqkBSZ6j75KCe5wmG+KbAiyclBl5WjsLU5q3LVgyeGjcCzJ0K8YBwU5ef5SXG/u+M5Uvv7d4m97g/MGCl8OrWAMnhbo5u8zMZTw9wLAI9wPLabkWd7S7p/Gb36Aquhn8Ha1TpR/LDFxq0oJIILfw="
+    },
+    "magicCase": {
+      "material": "SKULL_ITEM",
+      "name": "&5&lMagiczna Skrzynka",
+      "lore": [
+        "&aPostaw na ziemi, aby otworzyć"
+      ],
+      "enchantments": [
+        {
+          "enchantmentName": "PROTECTION_ENVIRONMENTAL",
+          "enchantmentLevel": 10
+        }
+      ],
+      "skin_value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTZmYjliM2UzZjY1MGI3YjI1OGMwNGZmY2I4NWMxYjVkY2FjOTJiODFlNTJkOTkyYzUxMjRiNjcwZmU4ZDYifX19",
+      "skin_signature": "",
+      "data": 0,
+      "amount": 1
+    },
+    "cobbleX": {
+      "material": "MOSSY_COBBLESTONE",
+      "name": "&9&lCobbleX",
+      "enchantments": [
+        {
+          "enchantmentName": "PROTECTION_ENVIRONMENTAL",
+          "enchantmentLevel": 10
+        }
+      ],
+      "data": 0,
+      "amount": 1
+    },
+    "safe_item": {
+      "name": "&dSejf",
+      "inventoryName": "&7Sejf: &d{SAFE_UNIQUE_ID}",
+      "loreWithoutDescription": [
+        "&7ID Sejfu: &d{SAFE_UNIQUE_ID}",
+        "&7Data utworzenia sejfu: &d{CREATION_DATE}",
+        "&7Ostatnie otworzenie sejfu: &d{LAST_OPENED_DATE}",
+        "&7Właściciel sejfu: &d{SAFE_OWNER}"
+      ],
+      "loreWithDescription": [
+        "&7ID Sejfu: &d{SAFE_UNIQUE_ID}",
+        "&7Data utworzenia sejfu: &d{CREATION_DATE}",
+        "&7Ostatnie otworzenie sejfu: &d{LAST_OPENED_DATE}",
+        "&7Właściciel sejfu: &d{SAFE_OWNER}",
+        "&7Opis sejfu: &d{SAFE_DESCRIPTION}"
+      ]
+    },
+    "stone_generator": {
+      "name": "&6Generator Stone",
+      "lore": [
+        "&8>> &7Aby utworzyć &6Generator Stone",
+        "&8>> &7postaw go na ziemie w odpowiednim",
+        "&8>> &7i bezpiecznym miejscu!",
+        "&8>> &7Nie chcesz mieć już generatora?",
+        "&8>> &7Możesz go zniszczyć używając &6złotego kilofa&7!"
+      ],
+      "enchantments": [
+        {
+          "enchantmentName": "PROTECTION_ENVIRONMENTAL",
+          "enchantmentLevel": 10
+        }
+      ]
+    },
+    "crowbar": {
+      "material": "STICK",
+      "name": "&d&lŁom do sejfu",
+      "data": 0,
+      "amount": 1
+    }
+  },
+  "enchantment_blockades": {
+    "item_blockades": {},
+    "global_blockades": [
+      {
+        "enchantment_name": "DAMAGE_ALL",
+        "max_level": 2
+      }
+    ]
+  },
+  "chat_status_type": "ENABLED",
+  "end_portal_points": [],
+  "drop": {
+    "permissions_multipliers": {
+      "platform-drop-champion": 1.6,
+      "platform-drop-vip": 1.2,
+      "platform-drop-svip": 1.4
+    },
+    "drops": [
+      {
+        "name": "Diament",
+        "material": "DIAMOND",
+        "chance": 1.0,
+        "fortune": true,
+        "data": 0,
+        "minAmount": 1,
+        "maxAmount": 3,
+        "minY": 0,
+        "maxY": 55,
+        "exp": 1.0
+      },
+      {
+        "name": "Sztabka Złota",
+        "material": "GOLD_INGOT",
+        "chance": 1.4,
+        "fortune": true,
+        "data": 0,
+        "minAmount": 1,
+        "maxAmount": 3,
+        "minY": 0,
+        "maxY": 55,
+        "exp": 1.0
+      },
+      {
+        "name": "Emerald",
+        "material": "EMERALD",
+        "chance": 0.9,
+        "fortune": true,
+        "data": 0,
+        "minAmount": 1,
+        "maxAmount": 3,
+        "minY": 0,
+        "maxY": 55,
+        "exp": 1.0
+      },
+      {
+        "name": "Książka",
+        "material": "BOOK",
+        "chance": 1.1,
+        "fortune": true,
+        "data": 0,
+        "minAmount": 1,
+        "maxAmount": 3,
+        "minY": 0,
+        "maxY": 55,
+        "exp": 1.0
+      },
+      {
+        "name": "Redstone",
+        "material": "REDSTONE",
+        "chance": 3.5,
+        "fortune": false,
+        "data": 0,
+        "minAmount": 1,
+        "maxAmount": 3,
+        "minY": 0,
+        "maxY": 55,
+        "exp": 1.0
+      },
+      {
+        "name": "Piasek",
+        "material": "SAND",
+        "chance": 2.5,
+        "fortune": false,
+        "data": 0,
+        "minAmount": 1,
+        "maxAmount": 3,
+        "minY": 0,
+        "maxY": 55,
+        "exp": 1.0
+      },
+      {
+        "name": "Proch",
+        "material": "GUNPOWDER",
+        "chance": 1.3,
+        "fortune": false,
+        "data": 0,
+        "minAmount": 1,
+        "maxAmount": 3,
+        "minY": 0,
+        "maxY": 55,
+        "exp": 1.0
+      },
+      {
+        "name": "Sztabka żelaza",
+        "material": "IRON_INGOT",
+        "chance": 1.9,
+        "fortune": true,
+        "data": 0,
+        "minAmount": 1,
+        "maxAmount": 3,
+        "minY": 0,
+        "maxY": 55,
+        "exp": 1.0
+      },
+      {
+        "name": "Obsydian",
+        "material": "OBSIDIAN",
+        "chance": 1.8,
+        "fortune": false,
+        "data": 0,
+        "minAmount": 1,
+        "maxAmount": 3,
+        "minY": 0,
+        "maxY": 55,
+        "exp": 1.0
+      },
+      {
+        "name": "Węgiel",
+        "material": "COAL",
+        "chance": 1.5,
+        "fortune": true,
+        "data": 0,
+        "minAmount": 1,
+        "maxAmount": 3,
+        "minY": 0,
+        "maxY": 55,
+        "exp": 1.0
+      }
+    ],
+    "turboDropMultiplier": 2.0,
+    "turboDropTime": 1652823261142
+  },
+  "anti_grief": {
+    "minY": 40,
+    "removalTime": "30m",
+    "ignoredAntiGriefBlockList": [
+      "ENDER_CHEST",
+      "CHEST",
+      "FURNACE",
+      "WORKBENCH",
+      "BOOKSHELF",
+      "ENCHANTMENT_TABLE",
+      "STONE_GENERATOR"
+    ]
+  },
+  "auto_messages": {
+    "broadcastTime": "1m",
+    "messages": [
+      "&8>> [&5R&fHC&8] &fZapraszamy na naszego discorda! dc.rosehc.pl",
+      "&8>> [&5R&fHC&8] &fZapraszamy na nasz fanpage! fb.me/rosehcpl",
+      "&8>> [&5R&fHC&8] &fZapraszamy na nasza strone www! rosehc.pl",
+      "&8>> [&5R&fHC&8] &fInformacje na temat rangi &6Champion &f/champion",
+      "&8>> [&5R&fHC&8] &fInformacje na temat rangi &bSVIP &f/svip",
+      "&8>> [&5R&fHC&8] &fInformacje na temat rangi &3VIP &f/vip",
+      "&8>> [&5R&fHC&8] &fInformacje na temat rangi &cMEDIA &f/media",
+      "&8>> [&5R&fHC&8] &fWszystkie receptury znajdziesz pod komendą /craftingi",
+      "&8>> [&5R&fHC&8] &fZakupione przez ciebie usługi premium możesz odebrać pod komendą /odbierz"
+    ]
+  },
+  "end_min_random_coordinate": -100,
+  "end_max_random_coordinate": 100,
+  "combat_time": "29s",
+  "death_kicks": true,
+  "server_freeze": false
+}

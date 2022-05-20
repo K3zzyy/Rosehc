@@ -1,0 +1,131 @@
+{
+  "gui": {
+    "inventoryName": "Twoje Itemy           Jego Itemy",
+    "inventorySize": 54,
+    "elements": {
+      "vine0": {
+        "name": "&8#",
+        "data": 0,
+        "amount": 1,
+        "material": "VINE",
+        "slot": 4,
+        "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+      },
+      "vine1": {
+        "name": "&8#",
+        "data": 0,
+        "amount": 1,
+        "material": "VINE",
+        "slot": 13,
+        "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+      },
+      "vine2": {
+        "name": "&8#",
+        "data": 0,
+        "amount": 1,
+        "material": "VINE",
+        "slot": 22,
+        "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+      },
+      "vine3": {
+        "name": "&8#",
+        "data": 0,
+        "amount": 1,
+        "material": "VINE",
+        "slot": 31,
+        "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+      },
+      "vine4": {
+        "name": "&8#",
+        "data": 0,
+        "amount": 1,
+        "material": "VINE",
+        "slot": 40,
+        "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+      },
+      "vine5": {
+        "name": "&8#",
+        "data": 0,
+        "amount": 1,
+        "material": "VINE",
+        "slot": 49,
+        "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+      },
+      "accept_first": {
+        "notAcceptedName": "&cKliknij tutaj, aby zaakceptować!",
+        "acceptedName": "&7Akceptowanie wymiany za: &d{SECONDS}s&7!",
+        "notAcceptedData": 14,
+        "acceptedData": 5,
+        "material": "STAINED_GLASS_PANE",
+        "slot": 48,
+        "_guiElementType": "pl.rosehc.controller.wrapper.trade.TradeAcceptItemSpigotGuiElementWrapper"
+      },
+      "accept_second": {
+        "notAcceptedName": "&cKliknij tutaj, aby zaakceptować!",
+        "acceptedName": "&7Akceptowanie wymiany za: &d{SECONDS}s&7!",
+        "notAcceptedData": 14,
+        "acceptedData": 5,
+        "material": "STAINED_GLASS_PANE",
+        "slot": 50,
+        "_guiElementType": "pl.rosehc.controller.wrapper.trade.TradeAcceptItemSpigotGuiElementWrapper"
+      }
+    }
+  },
+  "leftSlots": [
+    0,
+    1,
+    2,
+    3,
+    9,
+    10,
+    11,
+    12,
+    18,
+    19,
+    20,
+    21,
+    27,
+    28,
+    29,
+    30,
+    36,
+    37,
+    38,
+    39,
+    45,
+    46,
+    47
+  ],
+  "rightSlots": [
+    5,
+    6,
+    7,
+    8,
+    14,
+    15,
+    16,
+    17,
+    23,
+    24,
+    25,
+    26,
+    32,
+    33,
+    34,
+    35,
+    41,
+    42,
+    43,
+    44,
+    51,
+    52,
+    53
+  ],
+  "youAreCurrentlyInTrade": "&cJesteś już podczas wymiany z innym graczem!",
+  "playerIsCurrentlyInTrade": "&cPodany gracz jest aktualnie podczas wymiany!",
+  "requestAlreadySent": "&cWysłałeś już prośbę o wymianę do tego gracza!",
+  "requestSentReceiver": "&7Dostałeś prośbę o wymianę do gracza &d{PLAYER_NAME}&7! Aby zaakceptować, kliknij shiftem na tego oto gracza!",
+  "requestSentSender": "&7Pomyślnie wysłałeś prośbę o wymianę do gracza &d{PLAYER_NAME}&7!",
+  "tradeCompleted": "&aPomyślnie wymieniłeś się z graczem {PLAYER_NAME}!",
+  "secondsToAccept": 5
+}

@@ -1,0 +1,932 @@
+{
+  "messages": {
+    "killInfoMessages": {
+      "kill_info_message_without_guild": "&7Gracz &d{VICTIM_PLAYER_NAME} &8(&5-{VICTIM_POINTS_CHANGE}&8) &7został zabity przez gracza &d{KILLER_PLAYER_NAME} &8(&5+{KILLER_POINTS_CHANGE})",
+      "kill_info_message_with_killer_guild": "&7Gracz &d{VICTIM_PLAYER_NAME} &8(&5-{VICTIM_POINTS_CHANGE}&8) &7został zabity przez gracza &8[&d{KILLER_GUILD_TAG}&8] &d{KILLER_PLAYER_NAME} &8(&5+{KILLER_POINTS_CHANGE})",
+      "kill_info_message_with_victim_guild": "&7Gracz &8[&d{VICTIM_GUILD_TAG}&8] &d{VICTIM_PLAYER_NAME} &8(&5-{VICTIM_POINTS_CHANGE}&8) &7został zabity przez gracza &d{KILLER_PLAYER_NAME} &8(&5+{KILLER_POINTS_CHANGE})",
+      "kill_info_message_with_both_guild": "&7Gracz &8[&d{VICTIM_GUILD_TAG}&8] &d{VICTIM_PLAYER_NAME} &8(&5-{VICTIM_POINTS_CHANGE}&8) &7został zabity przez gracza &8[&d{KILLER_GUILD_TAG}&8] &d{KILLER_PLAYER_NAME} &8(&5+{KILLER_POINTS_CHANGE})"
+    },
+    "guildNotFound": "&cGildia o tagu {TAG} nie istnieje!",
+    "deathInfo": "&cGracz {PLAYER_NAME} zginął z niewyjaśnionych przyczyn! (-1)",
+    "cannotKillLastVictimToVictim": "&cTwój ranking nie został zabrany, ponieważ zostałeś ostatnio zabity przez tą samą osobę!",
+    "cannotKillLastVictimToKiller": "&cNie dostałeś rankingu za tego gracza, ponieważ ostatnio go zabiłeś!",
+    "cannotBeKilledByLastKillerToVictim": "&cTwój ranking nie został zabrany, ponieważ zostałeś ostatnio zabity przez tą samą osobę!",
+    "cannotBeKilledByLastKillerToKiller": "&cTen gracz był ostatnio zabity przez ciebie, punkty nie zostają dodane!",
+    "foundMultiAccountToVictim": "&cZnaleziono twoje multi konto, nie zabieram punktów!",
+    "foundMultiAccountToKiller": "&cZnaleziono twoje multi konto, nie dodaję punktów!",
+    "guildCreateYouAlreadyHaveAGuild": "&cPosiadasz już gildię! Nie możesz założyć kolejnej.",
+    "guildCreateGuildCanBeOnlyCreatedOnGameSector": "&cGildię możesz założyć tylko na sektorze grywalnym!",
+    "guildCreateGuildCannotBeCreatedNearBorder": "&cNie możesz stworzyć gildii blisko sektora! Minimalna odległość to: {DISTANCE}",
+    "guildCreateTagIsTooSmall": "&cTag gildii jest za mały! Minimalna ilość znaków to: {MIN_TAG_LENGTH}",
+    "guildCreateTagIsTooBig": "&cTag gildii jest zbyt wielki! Maksymalna ilość znaków to: {MAX_TAG_LENGTH}",
+    "guildCreateNameIsTooSmall": "&cNazwa gildii jest za mała! Minimalna ilość znaków to: {MIN_NAME_LENGTH}",
+    "guildCreateNameIsTooBig": "&Nazwa gildii jest zbyt wielka! Maksymalna ilość znaków to: {MAX_NAME_LENGTH}",
+    "guildCreateNoItemsStart": "&cBrak wymaganych itemów! Wymagana ilość itemów do założenia gildii:",
+    "guildCreateNoItemsFormat": "&d{ITEM_NAME} &8- &d{COUNTED_AMOUNT}&8/&d{REQUIRED_AMOUNT}",
+    "guildCreateNoItemsEnd": "",
+    "guildCreateTagIsNotAlphanumeric": "&cTag gildii nie jest alfanumeryczny!",
+    "guildCreateNameIsNotAlphanumeric": "&cNazwa gildii nie jest alfanumeryczny!",
+    "guildCreateThatGuildTagAlreadyExists": "&cPodany tag gildii jest już zajęty!",
+    "guildCreateThatGuildNameAlreadyExists": "&cPodana nazwa gildii jest już zajęta!",
+    "guildCreateGuildCannotBeCreatedNearGuild": "&cNie możesz stworzyć gildii blisko innej gildii!",
+    "guildCreateSuccessBroadcastMessage": "&7Gildia &d{NAME} &8- &d{TAG} &7została założona przez użytkownika &d{PLAYER_NAME}&7!",
+    "guildDeleteYouDontHaveAnyGuild": "&cNie posiadasz żadnej gildii do usunięcia!",
+    "guildDeleteYouAreNotALeader": "&cNie jesteś liderem tej gildii!",
+    "guildDeleteDeletionPrepared": "&7Aby usunąć gildię, wpisz &d/g usuń &7po raz kolejny w ciągu jednej minuty!",
+    "guildDeleteSucceedBroadcast": "&7Gildia &d{NAME} &8- &d{TAG} &7została rozwiązana przez gracza &d{PLAYER_NAME}!",
+    "guildHomeNoGuildFound": "&cNie posiadasz gildii, do której możesz się przeteleportować!",
+    "guildSetHomeNoGuildFound": "&cNie posiadasz gildii, w której możesz ustawić nowy dom!",
+    "guildSetHomeYouCannotManage": "&cNie możesz zarządzać domem gildyjnym ponieważ nie jesteś liderem lub zastępcą!",
+    "guildSetHomeSuccess": "&aPomyślnie ustawiono nową bazę gildyjną!",
+    "guildPvpNoGuildFound": "&cNie posiadasz gildii, w której mógłbyś zmienić status pvp!",
+    "guildPvpCannotChangeStatusInGuild": "&cNie posiadasz uprawnień do zmiany statusu PvP w gildii!",
+    "guildPvpCannotChangeStatusInAlly": "&cNie posiadasz uprawnień do zmiany statusu PvP w sojuszach!",
+    "guildPvpSuccessfullyEnabledInGuild": "&aWłączono pvp w gildii!",
+    "guildPvpSuccessfullyDisabledInGuild": "&cWyłączono pvp w gildii :(",
+    "guildPvpSuccessfullyEnabledInAlly": "&aWłączono pvp w sojuszach!",
+    "guildPvpSuccessfullyDisabledInAlly": "&cWyłączono pvp w sojuszach :(",
+    "guildInviteNoGuildFound": "&cNie posiadasz gildii, do której możesz zaprosić tego gracza.",
+    "guildInviteCannotInvitePlayer": "&cNie posiadasz uprawnień do zapraszania graczy do gildii!",
+    "guildInviteThisUserAlreadyHaveGuild": "&cTen użytkownik posiada już gildię, nie możesz go zaprosić.",
+    "guildInviteCannotInviteWhenGuildIsFull": "&cGildia jest pełna, nie możesz zaprosić tej osoby!",
+    "guildInviteCancelledSender": "&aPomyślnie anulowałeś zaproszenie gracza {PLAYER_NAME} do twojej gildii.",
+    "guildInviteCancelledReceiver": "&cTwoje zaproszenie do gildii {TAG} zostało zanulowane przez użytkownika {PLAYER_NAME}!",
+    "guildInviteSuccessSender": "&aPomyślnie wysłałeś prośbę o dołączenie do gracza {PLAYER_NAME}!",
+    "guildInviteSuccessReceiver": "&7Dostałeś prośbę o dołączenie od gildii &d{TAG} &8- &d{NAME}&7, aby zaakceptować wpisz: &d/g dolacz {TAG}",
+    "guildJoinYouAlreadyHaveGuild": "&cPosiadasz już gildię! Nie możesz dołączyć do innej.",
+    "guildJoinYouDontHaveInviteFromThisGuild": "&cNie posiadasz zaproszenia od tej gildii!",
+    "guildJoinNoFreeSlotWasFound": "&cNie można było dołączyć do tej gildii ponieważ jest pełna!",
+    "guildJoinSuccessSender": "&7Pomyślnie dołączyłeś do gildii &d{TAG} &8- &d{NAME}&7!",
+    "guildJoinSuccessGuild": "&7Gracz &d{PLAYER_NAME} &7dołączył do twojej gildii!",
+    "guildJoinSuccessBroadcast": "&7Gracz &d{PLAYER_NAME} &7dołączył do gildii &d{TAG} &8- &d{NAME}&7!",
+    "guildLeaveYouDontHaveAnyGuild": "&cNie posiadasz żadnej gildii, którą możesz opuścić!",
+    "guildLeaveBadErrorOccurred": "&cWystąpił niespodziewany problem podczas próby opuszczania gildii, zgłoś go do administracaji (GUILD_MEMBER_OBJECT_NOT_FOUND)",
+    "guildLeaveYouCannotLeaveAsLeader": "&cNie możesz opuścić gildii będąc liderem!",
+    "guildLeaveSuccessSender": "&7Pomyślnie opuściłeś gildię &d{TAG} &8- &d{NAME}",
+    "guildLeaveSuccessGuild": "&7Gracz &d{PLAYER_NAME} &7opuścił twoją gildię!",
+    "guildLeaveSuccessBroadcast": "&7Gracz &d{PLAYER_NAME} &7opuścił gildię &d{TAG} &8- &d{NAME}&7!",
+    "guildKickYouDontHaveAnyGuild": "&cNie posiadasz żadnej gildii, z której możesz wyrzucić tego gracza!",
+    "guildKickTargetDontHaveAnyGuild": "&cPodany gracz nie posiada żadnej gildii!",
+    "guildKickTargetIsNotInYourGuild": "&cPodany gracz nie jest w twojej gildii!",
+    "guildKickYouCannotKickAnyone": "&cNie posiadasz uprawnień do wyrzucania kogokolwiek z gildii!",
+    "guildKickBadErrorOccurred": "&cWystąpił niespodziewany problem podczas próby wyrzucenia graczy gildii, zgłoś go do administracaji (GUILD_MEMBER_OBJECT_NOT_FOUND)",
+    "guildKickYouCannotKickYourself": "&cNie możesz wyrzucić samego siebie z gildii!",
+    "guildKickYouCannotKickLeader": "&cNie możesz wyrzucić lidera z gildii!",
+    "guildKickSuccessSender": "&7Pomyślnie wyrzuciłeś gracza &d{PLAYER_NAME} &7z twojej gildii!",
+    "guildKickSuccessReceiver": "&7Zostałeś wyrzucony z gildii &d{TAG} &8- &d{TAG} &7przez użytkownika &d{PLAYER_NAME}&7!",
+    "guildKickSuccessBroadcast": "&7Gracz &d{RECEIVER_PLAYER_NAME} &7został wyrzucony z gildii &d{TAG} &8- &d{NAME} &7przez gracza &d{SENDER_PLAYER_NAME}&7!",
+    "guildEnlargeYouDontHaveAnyGuild": "&cNie posiadasz żadnej gildii, której teren może zostać powiększony!",
+    "guildEnlargeYouCannotEnlarge": "&cNie możesz powiększyć terenu gildii ponieważ nie masz do tego uprawnień!",
+    "guildEnlargeGuildHasMaximumSize": "&cGildia posiada maksymalną wielkość, nie możesz jej powiększyć!",
+    "guildEnlargeAnotherGuildIsNearYour": "&cInna gildia jest blisko twojej, nie możesz jej powiększyć!",
+    "guildEnlargeNoRequiredItem": "&cAby powiększyć teren gildii, potrzebujesz Diamentx{AMOUNT_NEEDED}!",
+    "guildEnlargeSuccessSender": "&7Pomyślnie powiększyłeś gildię do nowego rozmiaru! &8(&d{SIZE}&7x&d{SIZE}&8)",
+    "guildEnlargeSuccessGuild": "&7Gildia została powiększona do rozmiaru &d{SIZE}&7x&d{SIZE} &7przez gracza &d{PLAYER_NAME}&7!",
+    "guildValidityYouDontHaveAnyGuild": "&cNie posiadasz żadnej gildii, którą możesz przedłużyć!",
+    "guildValidityYouCannotExtendTime": "&cNie możesz przedłużyć ważności gildii ponieważ nie masz do tego uprawnień!",
+    "guildValidityWhenYouCanExtendTime": "&cNastępny raz gildię możesz przedłużyć za: {TIME}!",
+    "guildValidityMaxTimeExceed": "&cOsiągnąłeś maksymalny okres przedłużenia gildii! (7d)",
+    "guildValidityNoRequiredItem": "&cAby przedłużyć ważność gildii, potrzebujesz Emeraldx{AMOUNT_NEEDED}!",
+    "guildValiditySuccessSender": "&7Pomyślnie przedłużyłeś gildię do &d{TIME}&7! &8(&d{DATE}&8)",
+    "guildValiditySuccessGuild": "&7Gildia została przedłużona do &d{TIME} &8(&d{DATE}&8) &7przez gracza &d{PLAYER_NAME}&7!",
+    "guildAllyYouDontHaveAnyGuild": "&cNie posiadasz żadnej gildii, aby zawrzeć sojusz z inną!",
+    "guildAllyYouCannotInviteYourOwnGuild": "&cNie możesz wysłać zaproszenia do sojuszu z własną gildią!",
+    "guildAllyYouCannotInviteOtherGuild": "&cNie możesz wysłać zaproszenia do sojuszu z inną gildią, ponieważ nie masz uprawnień!",
+    "guildAllyYouAlreadyHaveOtherAlly": "&cPosiadasz już sojusz z inną gildią, nie możesz wysłać drugiego!",
+    "guildAllyTargetAlreadyHaveOtherAlly": "&cPodana gildia posiada już sojusz z inną gildią, nie możesz wysłać drugiego!",
+    "guildAllyInviteCancelledSender": "&7Pomyślnie cofnięto zaproszenie do sojuszu z gildią &d{TAG} &8- &d{NAME}&7!",
+    "guildAllyInviteCancelledReceiver": "&7Gildia &d{TAG} &8- &d{NAME} &7cofnęła zaproszenie do sojuszu z twoją gildią!",
+    "guildAllySentSender": "&7Pomyślnie wysłałeś zaproszenie do sojuszu z gildią &d{TAG} &8- &d{NAME}&7!",
+    "guildAllySentGuildSender": "&7Twoja gildia wysłała zaproszenie do sojuszu z &d{TAG} &8- &d{NAME}&7!",
+    "guildAllySentGuildReceiver": "&7Twoja gildia otrzymała zaproszenie do sojuszu z gildią &d{TAG} &8- &d{NAME}&7!\n&7Aby zaakceptować, wpisz: &d/g sojusz {TAG}",
+    "guildAllySuccessSender": "&7Pomyślnie zawarłeś sojusz z gildią &d{TAG} &8- &d{NAME}&7!",
+    "guildAllySuccessGuildSender": "&7Twoja gildia zawarła sojusz z gildią &d{TAG} &8- &d{NAME}&7!",
+    "guildAllySuccessGuildReceiver": "&7Gildia &d{TAG} &8- &d{NAME} &7zawarła sojusz z twoją gildią!",
+    "guildAllySuccessBroadcast": "&7Gildia &d{FIRST_TAG} &8- &d{FIRST_NAME} &7zawarła sojusz z gildią &d{SECOND_TAG} &8- &d{SECOND_NAME}&7!",
+    "guildBreakYouDontHaveAnyGuild": "&cNie posiadasz żadnej gildii, aby zerwać sojusz z inną!",
+    "guildBreakYouCannotBreakAllyWithYourOwnGuild": "&cNie możesz zerwać sojuszu z własną gildią!",
+    "guildBreakYouCannotBreakAllyWithOtherGuild": "&cNie możesz zerwać sojuszu z inną gildią, ponieważ nie posiadasz uprawnień!",
+    "guildBreakYouDontHaveAllyWithThisGuild": "&cNie posiadasz sojuszu z tą gildią! Nie możesz go zerwać.",
+    "guildBreakSuccessSender": "&7Pomyślnie zerwałeś sojusz z gildią &d{TAG} &8- &d{NAME}&7!",
+    "guildBreakSuccessGuildSender": "&7Twoja gildia zerwała sojusz z gildią &d{TAG} &8- &d{NAME}&7!",
+    "guildBreakSuccessGuildReceiver": "&7Gildia &d{TAG} &8- &d{NAME} &7zerwała sojusz z twoją gildią!",
+    "guildBreakSuccessBroadcast": "&7Gildia &d{FIRST_TAG} &8- &d{FIRST_NAME} &7zerwała sojusz z gildią &d{SECOND_TAG} &8- &d{SECOND_NAME}&7!",
+    "guildAlertYouAreCooldowned": "&cNastępny raz powiadomienie możesz wysłać za: {LEFT_TIME}!",
+    "guildAlertYouDontHaveAnyGuild": "&cNie posiadasz żadnej gildii, w której możesz wysłać powiadomienie!",
+    "guildAlertYouCannotSendAlert": "&cNie możesz wysłać powiadomienia, ponieważ nie posiadasz uprawnień!",
+    "guildAlertTitle": "&8[&d&lALERT GILDYJNY&8]",
+    "guildSetJoinAlertYouDontHaveAnyGuild": "&cNie posiadasz żadnej gildii, w której mógłbyś ustawić powiadomienie po wejściu!",
+    "guildSetJoinAlertYouCantSetAlert": "&cNie możesz ustawić powiadomienia po wejściu, ponieważ nie posiadasz uprawnień!",
+    "guildSetJoinAlertSetSuccess": "&7Pomyślnie ustawiłeś powiadomienie gildyjne po wejściu na serwer na: &d{ALERT_MESSAGE}&7!",
+    "guildSetJoinAlertRemoveSuccess": "&7Pomyślnie usunąłeś powiadomienie gildyjne po wejściu na serwer!",
+    "guildNeedHelpYouDontHaveAnyGuild": "&cNie masz żadnej gildii, w której możesz wysłać prośbę o pomoc!",
+    "guildNeedHelpIsCooldownedGuild": "&cKolejny raz prośbę o pomoc do gildii możesz wysłać za: {LEFT_TIME}",
+    "guildNeedHelpIsCooldownedAlly": "&cKolejny raz prośbę o pomoc do sojuszy możesz wysłać za: {LEFT_TIME}",
+    "guildNeedHelpTooManyHelpsGuild": "&cGildia posiada maksymalną ilość próśb o pomoc! (10",
+    "guildNeedHelpTooManyHelpsAlly": "&cGildia posiada maksymalną ilość próśb o pomoc sojuszniczą! (5)",
+    "guildNeedHelpRequestSuccessGuild": "&aPomyślnie wysłałeś prośbę o pomoc do gildii!",
+    "guildNeedHelpRequestSuccessAlly": "&aPomyślnie wysłałeś prośbę o pomoc do sojuszy!",
+    "guildExpiryBroadcast": "&7Gildia &d{TAG} &8- &d{NAME} &7wygasła! Jej koordynaty: X: &d{X}&7, Y: &d{Y}&7, Z: &d{Z}",
+    "guildHelpWaypointTitle": "{PLAYER_NAME} potrzebuje pomocy! X: {X}, Y: {Y}, Z: {Z}",
+    "guildPistonScannerPreparingActionBarMessage": "&aSkaner pistonów jest właśnie preparowany...",
+    "guildPistonScannerUpdatingActionBarMessage": "&7Limit pistonów na terenie gildii jest aktualnie &dodświeżany&7!\n&7Progres: &d{PROCESSED_BLOCKS}&8/&d{MAX_BLOCKS} &8(&d{PERCENTAGE}%&8)",
+    "nameTagEnemyGuildPrefix": "&7[&c{TAG}&7]",
+    "nameTagYourGuildPrefix": "&7[&a{TAG}&7]",
+    "nameTagAllyGuildPrefix": "&7[&b{TAG}&7]",
+    "guildWillSoonExpireJoinTitle": {
+      "title": "&cGildia wygasa",
+      "subTitle": "&cTwoja gildia wygasa za {TIME}, opłać ją aby jej nie stracić!",
+      "fadeIn": 0,
+      "stay": 100,
+      "fadeOut": 20
+    },
+    "top_user_rank_format": {
+      "0": "&f{PLAYER_NAME} &8[&d{POINTS}] {ONLINE_COLOR}●",
+      "1": "&f{PLAYER_NAME} &8[&d{POINTS}] {ONLINE_COLOR}●",
+      "2": "&f{PLAYER_NAME} &8[&d{POINTS}] {ONLINE_COLOR}●",
+      "3": "&f{PLAYER_NAME} &8[&d{POINTS}] {ONLINE_COLOR}●",
+      "4": "&f{PLAYER_NAME} &8[&d{POINTS}] {ONLINE_COLOR}●",
+      "5": "&f{PLAYER_NAME} &8[&d{POINTS}] {ONLINE_COLOR}●",
+      "6": "&f{PLAYER_NAME} &8[&d{POINTS}] {ONLINE_COLOR}●",
+      "7": "&f{PLAYER_NAME} &8[&d{POINTS}] {ONLINE_COLOR}●",
+      "8": "&f{PLAYER_NAME} &8[&d{POINTS}] {ONLINE_COLOR}●",
+      "9": "&f{PLAYER_NAME} &8[&d{POINTS}] {ONLINE_COLOR}●",
+      "10": "&f{PLAYER_NAME} &8[&d{POINTS}] {ONLINE_COLOR}●",
+      "11": "&f{PLAYER_NAME} &8[&d{POINTS}] {ONLINE_COLOR}●",
+      "12": "&f{PLAYER_NAME} &8[&d{POINTS}] {ONLINE_COLOR}●",
+      "13": "&f{PLAYER_NAME} &8[&d{POINTS}] {ONLINE_COLOR}●",
+      "14": "&f{PLAYER_NAME} &8[&d{POINTS}] {ONLINE_COLOR}●",
+      "15": "&f{PLAYER_NAME} &8[&d{POINTS}] {ONLINE_COLOR}●"
+    },
+    "top_guild_rank_format": {
+      "0": "&f{GUILD_TAG} &8[&d{POINTS}]",
+      "1": "&f{GUILD_TAG} &8[&d{POINTS}]",
+      "2": "&f{GUILD_TAG} &8[&d{POINTS}]",
+      "3": "&f{GUILD_TAG} &8[&d{POINTS}]",
+      "4": "&f{GUILD_TAG} &8[&d{POINTS}]",
+      "5": "&f{GUILD_TAG} &8[&d{POINTS}]",
+      "6": "&f{GUILD_TAG} &8[&d{POINTS}]",
+      "7": "&f{GUILD_TAG} &8[&d{POINTS}]",
+      "8": "&f{GUILD_TAG} &8[&d{POINTS}]",
+      "9": "&f{GUILD_TAG} &8[&d{POINTS}]",
+      "10": "&f{GUILD_TAG} &8[&d{POINTS}]",
+      "11": "&f{GUILD_TAG} &8[&d{POINTS}]",
+      "12": "&f{GUILD_TAG} &8[&d{POINTS}]",
+      "13": "&f{GUILD_TAG} &8[&d{POINTS}]",
+      "14": "&f{GUILD_TAG} &8[&d{POINTS}]",
+      "15": "&f{GUILD_TAG} &8[&d{POINTS}]"
+    },
+"guildInfo": "",
+    "guildHeadTitleEnemy": "&8[&c{TAG}&8]",
+    "guildHeadTitleYour": "&8[&a{TAG}&8]",
+    "guildHeadTitleAlly": "&8[&9{TAG}&8]",
+    "guildChatFormatGuild": "&2&l[DO GILDII] &a{PLAYER_NAME}: {MESSAGE}",
+    "guildChatFormatAlly": "&6&l[DO SOJUSZU] &b{PLAYER_NAME}: {MESSAGE}",
+    "youCannotPlaceBlocksOnEnemyGuild": "&cNie możesz kłaść bloków na terenie wrogiej gildii!",
+    "youCannotPlaceBlocksInCenter": "&cNie możesz stawiać bloków w środku gildii!",
+    "youCannotPlacePistonsWhenPistonScannerIsEnabled": "&cNie możesz stawiać pistonów gdy praca skanera jest aktywna!",
+    "youCannotPlacePistonsBecauseLimitHasBeenReached": "&cNie możesz stawiać teraz pistonów ponieważ przekroczyłeś ich limit!",
+    "youCannotPlaceBlocksNowBecauseTntExploded": "&cNie możesz stawiać teraz bloków ponieważ tnt wybuchło!",
+    "youCannotPlaceBlocksBecauseBadErrorOccurred": "&cNie możesz kłaść bloków ponieważ wystąpił niespodziewany problem z twoim kontem!",
+    "youCannotPlaceBlocksOnThisGuildBecauseYouDontHavePermission": "&cNie masz uprawnień do stawiania bloków na terenie tej gildii!",
+    "youCannotPlaceCoalOnThisGuildBecauseYouDontHavePermission": "&cNie masz uprawnień do stawiania węgla na terenie tej gildii!",
+    "youCannotPlaceLapisOnThisGuildBecauseYouDontHavePermission": "&cNie masz uprawnień do stawiania lapisu na terenie tej gildii!",
+    "youCannotPlaceObsidianOnThisGuildBecauseYouDontHavePermission": "&cNie masz uprawnień do stawiania obsydianu na terenie tej gildii!",
+    "youCannotPlaceSandOnThisGuildBecauseYouDontHavePermission": "&cNie masz uprawnień do stawiania piasku na terenie tej gildii!",
+    "youCannotPlaceRedStoneOnThisGuildBecauseYouDontHavePermission": "&cNie masz uprawnień do stawiania rzeczy związanych z redstonem na terenie tej gildii!",
+    "youCannotPlaceAnvilOnThisGuildBecauseYouDontHavePermission": "&cNie masz uprawnień do stawiania kowadeł na terenie tej gildii!",
+    "youCannotPlaceTntOnThisGuildBecauseYouDontHavePermission": "&cNie masz uprawnień do stawiania kowadeł na terenie tej gildii!",
+    "youCannotBreakBlocksOnEnemyGuild": "&cNie możesz niszczyć bloków na terenie wrogiej gildii!",
+    "youCannotBreakBlocksInCenter": "&cNie możesz niszczyć bloków w środku gildii!",
+    "youCannotBreakPistonsWhenPistonScannerIsEnabled": "&cNie możesz niszczyć pistonów gdy praca skanera jest aktywna!",
+    "youCannotBreakBlocksNowBecauseTntExploded": "&cNie możesz niszczyć teraz bloków ponieważ tnt wybuchło!",
+    "youCannotBreakBlocksBecauseBadErrorOccurred": "&cNie możesz niszczyć bloków ponieważ wystąpił niespodziewany problem z twoim kontem!",
+    "youCannotBreakBlocksBecauseYouDontHavePermission": "&cNie masz uprawnień do niszczenia bloków na terenie tej gildii!",
+    "youCannotEmptyBucketsOnEnemyGuild": "&cNie możesz rozlewać rzeczy na terenie wrogiej gildii!",
+    "youCannotEmptyBucketBecauseBadErrorOccurred": "&cNie możesz rozlewać rzeczy ponieważ wystąpił niespodziewany problem z twoim kontem!",
+    "youCannotEmptyWaterBecauseYouDontHavePermission": "&cNie masz uprawnien do rozlewania wody na terenie tej gildii!",
+    "youCannotEmptyLavaBecauseYouDontHavePermission": "&cNie masz uprawnien do rozlewania lawy na terenie tej gildii!",
+    "youCannotFillBucketsOnEnemyGuild": "&cNie możesz zabierać wody/lawy na terenie wrogiej gildii!",
+    "waterWillBeVanishedSoon": "&aWoda, którą postawiłeś zniknie za 5s!",
+    "waterWasSuccessfullyBorrowed": "&aPomyślnie zebrałeś wodę!",
+    "youCannotUseTeleportAcceptBecauseBadErrorOccured": "&cNie możesz używać komendy /tpaccept poniewaz wystąpił niespodziewany problem z twoim kontem!",
+    "youCannotUseTeleportAcceptOnThisGuildBecauseYouDontHavePermission": "&cNie masz uprawnień do używania komendy /tpaccept na terenie tej gildii!",
+    "youCannotPlaceBlocksOnThisYWhileInCombat": "&cNie możesz kłaść bloków na tym poziomie Y podczas PVP! Maksymalna wysokość to: {MAX_BLOCK_Y}",
+    "youCannotPlaceBlocksWhileInCombat": "&cNie możesz kłaść bloków podczas PVP!",
+    "youCannotOpenChestsBecauseBadErrorOccured": "&cNie możesz otwierać skrzynek ponieważ wystąpił niespodziewany problem z twoim kontem!",
+    "youCannotOpenFurnacesBecauseBadErrorOccured": "&cNie możesz otwierać piecyków ponieważ wystąpił niespodziewany problem z twoim kontem!",
+    "youCannotOpenChestsBecauseYouDontHavePermission": "&cNie masz uprawnień do otwierania skrzynek na terenie tej gildii!",
+    "youCannotOpenFurnacesBecauseYouDontHavePermission": "&cNie masz uprawnień do otwierania piecyków na terenie tej gildii!",
+    "tntHasJustExplodedOnYourTerrain": "&cNa twoim terenie wybuchło TNT! Nie możesz budować przez: 2m",
+    "youCannotUseThisCommandOnThisTerrain": "&cNie możesz używać tej komendy na terenie wrogiej gildii!",
+    "enemyHadJustEnteredYourGuildTerrain": "&cWróg wkroczył na teren gildii!",
+    "guildEnterTitle": {
+      "title": "",
+      "subTitle": "&7Wkroczyłeś na teren gildii &8[&d{TAG}&8]",
+      "fadeIn": 0,
+      "stay": 20,
+      "fadeOut": 10
+    },
+    "guildLeaveTitle": {
+      "title": "",
+      "subTitle": "&7Opuściłeś teren gildii &8[&d{TAG}&8]",
+      "fadeIn": 0,
+      "stay": 20,
+      "fadeOut": 10
+    },
+    "yourGuildWithTntProtectionBossBarMessage": {
+      "title": "&aJesteś na terenie swojej gildii &7[&2{TAG}&7]\n&aGildia posiada ochronę przed TNT przez: &2{TIME}",
+      "barStyleWrapper": "SOLID",
+      "barColorWrapper": "GREEN"
+    },
+    "yourGuildWithoutTntProtectionBossBarMessage": {
+      "title": "&aJesteś na terenie swojej gildii &7[&2{TAG}&7]",
+      "barStyleWrapper": "SOLID",
+      "barColorWrapper": "GREEN"
+    },
+    "enemyGuildWithTntProtectionBossBarMessage": {
+      "title": "&cJesteś na terenie wrogiej gildii &7[&4{TAG}&7]\n&cGildia posiada ochronę przed TNT przez: &4{TIME}",
+      "barStyleWrapper": "SOLID",
+      "barColorWrapper": "RED"
+    },
+    "enemyGuildWithoutTntProtectionBossBarMessage": {
+      "title": "&cJesteś na terenie wrogiej gildii &7[&4{TAG}&7]",
+      "barStyleWrapper": "SOLID",
+      "barColorWrapper": "RED"
+    },
+    "allyGuildWithTntProtectionBossBarMessage": {
+      "title": "&bJesteś na terenie sojuszniczej gildii &7[&9{TAG}&7]\n&bGildia posiada ochronę przed TNT przez: &9{TIME}",
+      "barStyleWrapper": "SOLID",
+      "barColorWrapper": "BLUE"
+    },
+    "allyGuildWithoutTntProtectionBossBarMessage": {
+      "title": "&bJesteś na terenie sojuszniczej gildii &7[&9{TAG}&7]",
+      "barStyleWrapper": "SOLID",
+      "barColorWrapper": "BLUE"
+    }
+  },
+  "plugin": {
+    "defaultGroupUUID": "d4e40926-0d9c-4eab-a46f-ba301a024e15",
+    "cuboidSchematicFilePath": "./schematics/cuboid.schematic",
+    "groupMap": {
+      "f9044587-1b77-4e4b-b8d7-2906f485390a": {
+        "permissions": [
+          "FURNACES_ACCESS",
+          "PLACING_SAND",
+          "WATER_PLACING_ACCESS",
+          "PLACING_LAPIS_BLOCKS",
+          "CHANGING_PVP_STATE_IN_GUILD",
+          "PLACING_BLOCKS",
+          "LAVA_PLACING_ACCESS",
+          "PLACING_OBSIDIAN",
+          "ACCEPTING_TELEPORTS_ON_TERRAIN",
+          "ANVIL_PLACING_ACCESS",
+          "CHEST_ACCESS",
+          "BREAKING_BLOCKS",
+          "LOG_BLOCK_ACCESS",
+          "PLACING_COAL"
+        ],
+        "color": "GREEN",
+        "name": "ZAUFANY",
+        "leader": false,
+        "deputy": false
+      },
+      "6f1cdf97-a83a-4a16-8fb0-4998e0d7e602": {
+        "permissions": [
+          "FURNACES_ACCESS",
+          "WATER_PLACING_ACCESS",
+          "ANVIL_PLACING_ACCESS",
+          "CHEST_ACCESS",
+          "PLACING_BLOCKS",
+          "BREAKING_BLOCKS"
+        ],
+        "color": "BLUE",
+        "name": "CZ£ONEK",
+        "leader": false,
+        "deputy": false
+      },
+      "d4e40926-0d9c-4eab-a46f-ba301a024e15": {
+        "permissions": [
+          "FURNACES_ACCESS",
+          "ANVIL_PLACING_ACCESS",
+          "CHEST_ACCESS",
+          "PLACING_BLOCKS",
+          "BREAKING_BLOCKS"
+        ],
+        "color": "PINK",
+        "name": "REKRUT",
+        "leader": false,
+        "deputy": false
+      },
+      "5c2108f6-89f9-465c-aaa3-72480de5472e": {
+        "permissions": [
+          "PLACING_SAND",
+          "FURNACES_ACCESS",
+          "WATER_PLACING_ACCESS",
+          "PLACING_LAPIS_BLOCKS",
+          "CHANGING_PVP_STATE_IN_GUILD",
+          "PLACING_BLOCKS",
+          "PLACING_OBSIDIAN",
+          "LAVA_PLACING_ACCESS",
+          "EDITING_PERMISSIONS",
+          "ACCEPTING_TELEPORTS_ON_TERRAIN",
+          "REDSTONE_PLACING_ACCESS",
+          "CHANGING_PVP_STATE_IN_ALLY",
+          "PLACING_TNT",
+          "ANVIL_PLACING_ACCESS",
+          "CHEST_ACCESS",
+          "BREAKING_BLOCKS",
+          "LOG_BLOCK_ACCESS",
+          "PLACING_COAL"
+        ],
+        "color": "YELLOW",
+        "name": "LIDER",
+        "leader": true,
+        "deputy": false
+      },
+      "ae46e4d6-ab00-4708-9c3d-cd3d93913f90": {
+        "permissions": [
+          "PLACING_SAND",
+          "FURNACES_ACCESS",
+          "WATER_PLACING_ACCESS",
+          "PLACING_LAPIS_BLOCKS",
+          "CHANGING_PVP_STATE_IN_GUILD",
+          "PLACING_BLOCKS",
+          "PLACING_OBSIDIAN",
+          "LAVA_PLACING_ACCESS",
+          "EDITING_PERMISSIONS",
+          "ACCEPTING_TELEPORTS_ON_TERRAIN",
+          "REDSTONE_PLACING_ACCESS",
+          "CHANGING_PVP_STATE_IN_ALLY",
+          "PLACING_TNT",
+          "ANVIL_PLACING_ACCESS",
+          "CHEST_ACCESS",
+          "BREAKING_BLOCKS",
+          "LOG_BLOCK_ACCESS",
+          "PLACING_COAL"
+        ],
+        "color": "RED",
+        "name": "ZASTĘPCA",
+        "leader": false,
+        "deputy": true
+      }
+    },
+    "blocked_terrain_commands": [
+      "/home",
+      "/sethome",
+      "/dom",
+      "/domki",
+      "/ustawdom"
+    ],
+    "guild_items": {
+      "SMALL": [
+        {
+          "normal_item": {
+            "material": "BOOKSHELF",
+            "data": 0,
+            "amount": 64
+          }
+        },
+        {
+          "normal_item": {
+            "material": "ENDER_PEARL",
+            "data": 0,
+            "amount": 16
+          }
+        },
+        {
+          "normal_item": {
+            "material": "GOLDEN_APPLE",
+            "data": 0,
+            "amount": 64
+          }
+        },
+        {
+          "normal_item": {
+            "material": "SKULL_ITEM",
+            "data": 0,
+            "amount": 8
+          },
+          "custom_item": "GHEAD"
+        },
+        {
+          "normal_item": {
+            "material": "ANVIL",
+            "data": 0,
+            "amount": 32
+          }
+        },
+        {
+          "normal_item": {
+            "material": "SLIME_BLOCK",
+            "data": 0,
+            "amount": 8
+          }
+        },
+        {
+          "normal_item": {
+            "material": "DIAMOND_BLOCK",
+            "data": 0,
+            "amount": 48
+          }
+        },
+        {
+          "normal_item": {
+            "material": "ENCHANTMENT_TABLE",
+            "data": 0,
+            "amount": 48
+          }
+        }
+      ],
+      "MEDIUM": [
+        {
+          "normal_item": {
+            "material": "BOOKSHELF",
+            "data": 0,
+            "amount": 64
+          }
+        },
+        {
+          "normal_item": {
+            "material": "ENDER_PEARL",
+            "data": 0,
+            "amount": 16
+          }
+        },
+        {
+          "normal_item": {
+            "material": "GOLDEN_APPLE",
+            "data": 0,
+            "amount": 64
+          }
+        },
+        {
+          "normal_item": {
+            "material": "SKULL_ITEM",
+            "data": 0,
+            "amount": 8
+          },
+          "custom_item": "GHEAD"
+        },
+        {
+          "normal_item": {
+            "material": "ANVIL",
+            "data": 0,
+            "amount": 32
+          }
+        },
+        {
+          "normal_item": {
+            "material": "SLIME_BLOCK",
+            "data": 0,
+            "amount": 8
+          }
+        },
+        {
+          "normal_item": {
+            "material": "DIAMOND_BLOCK",
+            "data": 0,
+            "amount": 48
+          }
+        },
+        {
+          "normal_item": {
+            "material": "ENCHANTMENT_TABLE",
+            "data": 0,
+            "amount": 48
+          }
+        }
+      ],
+      "LARGE": [
+        {
+          "normal_item": {
+            "material": "BOOKSHELF",
+            "data": 0,
+            "amount": 64
+          }
+        },
+        {
+          "normal_item": {
+            "material": "ENDER_PEARL",
+            "data": 0,
+            "amount": 16
+          }
+        },
+        {
+          "normal_item": {
+            "material": "GOLDEN_APPLE",
+            "data": 0,
+            "amount": 64
+          }
+        },
+        {
+          "normal_item": {
+            "material": "SKULL_ITEM",
+            "data": 0,
+            "amount": 8
+          },
+          "custom_item": "GHEAD"
+        },
+        {
+          "normal_item": {
+            "material": "ANVIL",
+            "data": 0,
+            "amount": 32
+          }
+        },
+        {
+          "normal_item": {
+            "material": "SLIME_BLOCK",
+            "data": 0,
+            "amount": 8
+          }
+        },
+        {
+          "normal_item": {
+            "material": "DIAMOND_BLOCK",
+            "data": 0,
+            "amount": 48
+          }
+        },
+        {
+          "normal_item": {
+            "material": "ENCHANTMENT_TABLE",
+            "data": 0,
+            "amount": 48
+          }
+        }
+      ]
+    },
+    "guild_items_percentage_changes": {
+      "guilds-guild-items-vip": 25.0,
+      "guilds-guild-items-svip": 35.0,
+      "guilds-guild-items-champion": 50.0
+    },
+    "regeneration_block_replacements": {
+      "GOLD_BLOCK:0": {
+        "material": "STONE",
+        "data": 0
+      },
+      "DIAMOND_BLOCK:0": {
+        "material": "STONE",
+        "data": 0
+      }
+    },
+    "explosion_chances": {
+      "OBSIDIAN:0": 20.0
+    },
+    "enlarge_item": {
+      "normal_item": {
+        "material": "DIAMOND",
+        "data": 0,
+        "amount": 5
+      }
+    },
+    "validity_item": {
+      "normal_item": {
+        "material": "EMERALD",
+        "data": 0,
+        "amount": 192
+      }
+    },
+    "killerPointsCalculationNormal": "NO_CALCULATION",
+    "killerPointsCalculationArena": "NO_CALCULATION",
+    "victimPointsCalculationNormal": "NO_CALCULATION",
+    "victimPointsCalculationArena": "NO_CALCULATION",
+    "killerAndVictimPointsCalculationNormal": "abs({VICTIM_POINTS} - {KILLER_POINTS}) / 2",
+    "killerAndVictimPointsCalculationArena": "abs({VICTIM_POINTS} - {KILLER_POINTS}) / 4",
+    "enlargeAmountCalculation": "({REGION_SIZE} / {ENLARGE_ITEM_AMOUNT}) * 2",
+    "validityAmountCalculation": "{VALIDITY_ITEM_AMOUNT} + {GUILD_REGION_SIZE}",
+    "victimKillerConsiderationTimeoutTime": "30s",
+    "victimKillerLastKillTimeoutTime": "1h",
+    "startGuildProtectionTime": "1d",
+    "startGuildValidityTime": "3d",
+    "addGuildValidityTime": "1d",
+    "whenGuildValidityTime": "1d",
+    "maxGuildValidityTime": "7d",
+    "minGuildValidityTime": "30h",
+    "guildMemberInviteConsiderationTimeoutTime": "2m",
+    "guildAllyInviteConsiderationTimeoutTime": "2m",
+    "tntExplosionTime": "2m",
+    "tntExplosionNotificationTime": "30s",
+    "guildNeedHelpWaypointTime": "30s",
+    "startUserPoints": 1000,
+    "startGuildSize": 50,
+    "startGuildLives": 4,
+    "enlargeGuildSize": 10,
+    "maxGuildSize": 100,
+    "minGuildDistance": 10,
+    "guildY": 35,
+    "minSectorDistance": 100,
+    "minTagLength": 3,
+    "maxTagLength": 5,
+    "minNameLength": 4,
+    "maxNameLength": 22,
+    "guildNeedHelpNormalLimit": 10,
+    "guildNeedHelpAllyLimit": 5
+  },
+  "inventories": {
+    "type_selection": {
+      "inventoryName": "&dWybierz typ gildii",
+      "inventoryType": "HOPPER",
+      "inventorySize": 0,
+      "elements": {
+        "SMALL": {
+          "name": "&6MAŁA",
+          "data": 0,
+          "amount": 1,
+          "material": "WOOD_SWORD",
+          "slot": 0,
+          "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+        },
+        "MEDIUM": {
+          "name": "&cŚREDNIA",
+          "data": 0,
+          "amount": 1,
+          "material": "IRON_SWORD",
+          "slot": 2,
+          "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+        },
+        "LARGE": {
+          "name": "&4DUŻA",
+          "data": 0,
+          "amount": 1,
+          "material": "DIAMOND_SWORD",
+          "slot": 4,
+          "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+        }
+      },
+      "fillElement": {
+        "name": "&8#",
+        "data": 15,
+        "amount": 1,
+        "material": "STAINED_GLASS_PANE",
+        "slot": 0,
+        "_guiElementType": "pl.rosehc.controller.wrapper.spigot.DefaultSpigotGuiElementWrapper"
+      }
+    }
+  },
+  "tablist": [
+    {
+      "elements": {
+        "0": "",
+        "1": "&D&lSTATYSTYKI",
+        "2": "",
+        "3": "&8» &7Nick: &f{PLAYER_NAME}",
+	"4": "&8» &7Ranking: &f{USER_POINTS_NORMAL} &7| &f{USER_POINTS_ARENA}",
+	"5": "&8» &7Pozycja: &f{USER_POSITION_NORMAL} &7| &f{USER_POSITION_ARENA}",
+        "6": "&8» &7Zabójstwa: &f{USER_KILLS_NORMAL} &7| &f{USER_KILLS_ARENA}",
+        "7": "&8» &7Śmierci: &f{USER_DEATHS_NORMAL} &7| &f{USER_DEATHS_ARENA}",
+	"8": "&8» &7Killstreak: &f{USER_KILL_STREAK_NORMAL} &7| &f{USER_KILL_STREAK_ARENA}",
+        "9": "",
+        "10": "&D&lTWOJA GILDIA",
+        "11": "",
+        "12": "&8» &7TAG: &f{GUILD_TAG}",
+	"13": "&8» &7Ranking: &f{GUILD_POINTS}",
+        "14": "&8» &7Pozycja: &f{GUILD_POSITION}",
+        "15": "&8» &7Zabójstwa: &f{GUILD_KILLS}",
+        "16": "&8» &7Śmierci: &f{GUILD_DEATHS}",
+	"17": "&8» &7K/D: &f{GUILD_KDR}",
+        "18": "&8» &7Życia gildii: &f{GUILD_LIVES}",
+        "19": "",
+        "20": "",
+        "21": "&D&lTOPKA GRACZY &7&l[&d&lNORMAL&7&l]",
+        "22": "",
+	"23": "&61. {USER_NORMAL_TOP_1}",
+        "24": "&62. {USER_NORMAL_TOP_2}",
+        "25": "&63. {USER_NORMAL_TOP_3}",
+        "26": "&f4. {USER_NORMAL_TOP_4}",
+        "27": "&f5. {USER_NORMAL_TOP_5}",
+        "28": "&f6. {USER_NORMAL_TOP_6}",
+        "29": "&f7. {USER_NORMAL_TOP_7}",
+        "30": "&f8. {USER_NORMAL_TOP_8}",
+        "31": "&f9. {USER_NORMAL_TOP_9}",
+        "32": "&f10. {USER_NORMAL_TOP_10}",
+        "33": "&f11. {USER_NORMAL_TOP_11}",
+        "34": "&f12. {USER_NORMAL_TOP_12}",
+        "35": "&f13. {USER_NORMAL_TOP_13}",
+        "36": "&f14. {USER_NORMAL_TOP_14}",
+        "37": "&f15. {USER_NORMAL_TOP_15}",
+        "38": "&f16. {USER_NORMAL_TOP_16}",
+        "39": "",
+        "40": "",
+        "41": "&D&lTOPKA GILDII &7&l[&d&lMALE&7&l]",
+        "42": "",
+        "43": "&61. {GUILD_SMALL_TOP_1}",
+        "44": "&62. {GUILD_SMALL_TOP_2}",
+        "45": "&63. {GUILD_SMALL_TOP_3}",
+        "46": "&f4. {GUILD_SMALL_TOP_4}",
+        "47": "&f5. {GUILD_SMALL_TOP_5}",
+        "48": "&f6. {GUILD_SMALL_TOP_6}",
+        "49": "&f7. {GUILD_SMALL_TOP_7}",
+        "50": "&f8. {GUILD_SMALL_TOP_8}",
+        "51": "&f9. {GUILD_SMALL_TOP_9}",
+        "52": "&f10. {GUILD_SMALL_TOP_10}",
+        "53": "&f11. {GUILD_SMALL_TOP_11}",
+        "54": "&f12. {GUILD_SMALL_TOP_12}",
+        "55": "&f13. {GUILD_SMALL_TOP_13}",
+        "56": "&f14. {GUILD_SMALL_TOP_14}",
+        "57": "&f15. {GUILD_SMALL_TOP_15}",
+        "58": "&f16. {GUILD_SMALL_TOP_16}",
+        "59": "",
+        "60": "",
+        "61": "&D&lINFORMACJE",
+        "62": "",
+        "63": "&8» &7Godzina: &f{SECTOR_TIME}",
+        "64": "&8» &7Sektor: &f{SECTOR_NAME}",
+        "65": "&8» &7Graczy: &f{ONLINE}",
+        "66": "&8» &7Gildii: &f{GUILDS_SIZE}",
+        "67": "&8» &7Ranga: &f{PLAYER_RANK}",
+        "68": "",
+        "69": "&D&lKomendy",
+        "70": "",
+        "71": "&8» &7Lista komend:",
+        "72": "&8» &7/pomoc",
+        "73": "",
+        "74": "&8» &7Informacje o gildiach:",
+        "75": "&8» &7/gildie",
+        "76": "",
+        "77": "&8» &7Spis receptur",
+        "78": "&8» &7/craftingi",
+        "79": ""
+      },
+      "header": "&a&5&lROSE&f&lHC.PL",
+      "footer": "&5&lts.rosehc.pl   &8|   &5&ldc.rosehc.pl   &8|   &5&lfp.rosehc.pl",
+      "updateTime": "30s"
+    },
+    {
+      "elements": {
+        "0": "",
+        "1": "&D&lSTATYSTYKI",
+        "2": "",
+        "3": "&8» &7Nick: &f{PLAYER_NAME}",
+	"4": "&8» &7Ranking: &f{USER_POINTS_NORMAL} &7| &f{USER_POINTS_ARENA}",
+	"5": "&8» &7Pozycja: &f{USER_POSITION_NORMAL} &7| &f{USER_POSITION_ARENA}",
+        "6": "&8» &7Zabójstwa: &f{USER_KILLS_NORMAL} &7| &f{USER_KILLS_ARENA}",
+        "7": "&8» &7Śmierci: &f{USER_DEATHS_NORMAL} &7| &f{USER_DEATHS_ARENA}",
+	"8": "&8» &7Killstreak: &f{USER_KILL_STREAK_NORMAL} &7| &f{USER_KILL_STREAK_ARENA}",
+        "9": "",
+        "10": "&D&lTWOJA GILDIA",
+        "11": "",
+        "12": "&8» &7TAG: &f{GUILD_TAG}",
+	"13": "&8» &7Ranking: &f{GUILD_POINTS}",
+        "14": "&8» &7Pozycja: &f{GUILD_POSITION}",
+        "15": "&8» &7Zabójstwa: &f{GUILD_KILLS}",
+        "16": "&8» &7Śmierci: &f{GUILD_DEATHS}",
+	"17": "&8» &7K/D: &f{GUILD_KDR}",
+        "18": "&8» &7Życia gildii: &f{GUILD_LIVES}",
+        "19": "",
+        "20": "",
+        "21": "&D&lTOPKA GRACZY &7&l[&d&lARENA&7&l]",
+        "22": "",
+	"23": "&61. {USER_ARENA_TOP_1}",
+        "24": "&62. {USER_ARENA_TOP_2}",
+        "25": "&63. {USER_ARENA_TOP_3}",
+        "26": "&f4. {USER_ARENA_TOP_4}",
+        "27": "&f5. {USER_ARENA_TOP_5}",
+        "28": "&f6. {USER_ARENA_TOP_6}",
+        "29": "&f7. {USER_ARENA_TOP_7}",
+        "30": "&f8. {USER_ARENA_TOP_8}",
+        "31": "&f9. {USER_ARENA_TOP_9}",
+        "32": "&f10. {USER_ARENA_TOP_10}",
+        "33": "&f11. {USER_ARENA_TOP_11}",
+        "34": "&f12. {USER_ARENA_TOP_12}",
+        "35": "&f13. {USER_ARENA_TOP_13}",
+        "36": "&f14. {USER_ARENA_TOP_14}",
+        "37": "&f15. {USER_ARENA_TOP_15}",
+        "38": "&f16. {USER_ARENA_TOP_16}",
+        "39": "",
+        "40": "",
+        "41": "&D&lTOPKA GILDII &7&l[&d&lSREDNIE&7&l]",
+        "42": "",
+        "43": "&61. {GUILD_MEDIUM_TOP_1}",
+        "44": "&62. {GUILD_MEDIUM_TOP_2}",
+        "45": "&63. {GUILD_MEDIUM_TOP_3}",
+        "46": "&f4. {GUILD_MEDIUM_TOP_4}",
+        "47": "&f5. {GUILD_MEDIUM_TOP_5}",
+        "48": "&f6. {GUILD_MEDIUM_TOP_6}",
+        "49": "&f7. {GUILD_MEDIUM_TOP_7}",
+        "50": "&f8. {GUILD_MEDIUM_TOP_8}",
+        "51": "&f9. {GUILD_MEDIUM_TOP_9}",
+        "52": "&f10. {GUILD_MEDIUM_TOP_10}",
+        "53": "&f11. {GUILD_MEDIUM_TOP_11}",
+        "54": "&f12. {GUILD_MEDIUM_TOP_12}",
+        "55": "&f13. {GUILD_MEDIUM_TOP_13}",
+        "56": "&f14. {GUILD_MEDIUM_TOP_14}",
+        "57": "&f15. {GUILD_MEDIUM_TOP_15}",
+        "58": "&f16. {GUILD_MEDIUM_TOP_16}",
+        "59": "",
+        "60": "",
+        "61": "&D&lINFORMACJE",
+        "62": "",
+        "63": "&8» &7Godzina: &f{SECTOR_TIME}",
+        "64": "&8» &7Sektor: &f{SECTOR_NAME}",
+        "65": "&8» &7Graczy: &f{ONLINE}",
+        "66": "&8» &7Gildii: &f{GUILDS_SIZE}",
+        "67": "&8» &7Ranga: &f{PLAYER_RANK}",
+        "68": "",
+        "69": "&D&lKomendy",
+        "70": "",
+        "71": "&8» &7Lista komend:",
+        "72": "&8» &7/pomoc",
+        "73": "",
+        "74": "&8» &7Informacje o gildiach:",
+        "75": "&8» &7/gildie",
+        "76": "",
+        "77": "&8» &7Spis receptur",
+        "78": "&8» &7/craftingi",
+        "79": ""
+      },
+      "header": "&a&5&lROSE&f&lHC.PL",
+      "footer": "&5&lts.rosehc.pl   &8|   &5&ldc.rosehc.pl   &8|   &5&lfp.rosehc.pl",
+      "updateTime": "30s"
+    },
+    {
+      "elements": {
+        "0": "",
+        "1": "&D&lSTATYSTYKI",
+        "2": "",
+        "3": "&8» &7Nick: &f{PLAYER_NAME}",
+	"4": "&8» &7Ranking: &f{USER_POINTS_NORMAL} &7| &f{USER_POINTS_ARENA}",
+	"5": "&8» &7Pozycja: &f{USER_POSITION_NORMAL} &7| &f{USER_POSITION_ARENA}",
+        "6": "&8» &7Zabójstwa: &f{USER_KILLS_NORMAL} &7| &f{USER_KILLS_ARENA}",
+        "7": "&8» &7Śmierci: &f{USER_DEATHS_NORMAL} &7| &f{USER_DEATHS_ARENA}",
+	"8": "&8» &7Killstreak: &f{USER_KILL_STREAK_NORMAL} &7| &f{USER_KILL_STREAK_ARENA}",
+        "9": "",
+        "10": "&D&lTWOJA GILDIA",
+        "11": "",
+        "12": "&8» &7TAG: &f{GUILD_TAG}",
+	"13": "&8» &7Ranking: &f{GUILD_POINTS}",
+        "14": "&8» &7Pozycja: &f{GUILD_POSITION}",
+        "15": "&8» &7Zabójstwa: &f{GUILD_KILLS}",
+        "16": "&8» &7Śmierci: &f{GUILD_DEATHS}",
+	"17": "&8» &7K/D: &f{GUILD_KDR}",
+        "18": "&8» &7Życia gildii: &f{GUILD_LIVES}",
+        "19": "",
+        "20": "",
+        "21": "&D&lTOPKA GRACZY &7&l[&d&lNORMAL&7&l]",
+        "22": "",
+	"23": "&61. {USER_NORMAL_TOP_1}",
+        "24": "&62. {USER_NORMAL_TOP_2}",
+        "25": "&63. {USER_NORMAL_TOP_3}",
+        "26": "&f4. {USER_NORMAL_TOP_4}",
+        "27": "&f5. {USER_NORMAL_TOP_5}",
+        "28": "&f6. {USER_NORMAL_TOP_6}",
+        "29": "&f7. {USER_NORMAL_TOP_7}",
+        "30": "&f8. {USER_NORMAL_TOP_8}",
+        "31": "&f9. {USER_NORMAL_TOP_9}",
+        "32": "&f10. {USER_NORMAL_TOP_10}",
+        "33": "&f11. {USER_NORMAL_TOP_11}",
+        "34": "&f12. {USER_NORMAL_TOP_12}",
+        "35": "&f13. {USER_NORMAL_TOP_13}",
+        "36": "&f14. {USER_NORMAL_TOP_14}",
+        "37": "&f15. {USER_NORMAL_TOP_15}",
+        "38": "&f16. {USER_NORMAL_TOP_16}",
+        "39": "",
+        "40": "",
+        "41": "&D&lTOPKA GILDII &7&l[&d&lDUZA&7&l]",
+        "42": "",
+        "43": "&61. {GUILD_LARGE_TOP_1}",
+        "44": "&62. {GUILD_LARGE_TOP_2}",
+        "45": "&63. {GUILD_LARGE_TOP_3}",
+        "46": "&f4. {GUILD_LARGE_TOP_4}",
+        "47": "&f5. {GUILD_LARGE_TOP_5}",
+        "48": "&f6. {GUILD_LARGE_TOP_6}",
+        "49": "&f7. {GUILD_LARGE_TOP_7}",
+        "50": "&f8. {GUILD_LARGE_TOP_8}",
+        "51": "&f9. {GUILD_LARGE_TOP_9}",
+        "52": "&f10. {GUILD_LARGE_TOP_10}",
+        "53": "&f11. {GUILD_LARGE_TOP_11}",
+        "54": "&f12. {GUILD_LARGE_TOP_12}",
+        "55": "&f13. {GUILD_LARGE_TOP_13}",
+        "56": "&f14. {GUILD_LARGE_TOP_14}",
+        "57": "&f15. {GUILD_LARGE_TOP_15}",
+        "58": "&f16. {GUILD_LARGE_TOP_16}",
+        "59": "",
+        "60": "",
+        "61": "&D&lINFORMACJE",
+        "62": "",
+        "63": "&8» &7Godzina: &f{SECTOR_TIME}",
+        "64": "&8» &7Sektor: &f{SECTOR_NAME}",
+        "65": "&8» &7Graczy: &f{ONLINE}",
+        "66": "&8» &7Gildii: &f{GUILDS_SIZE}",
+        "67": "&8» &7Ranga: &f{PLAYER_RANK}",
+        "68": "",
+        "69": "&D&lKomendy",
+        "70": "",
+        "71": "&8» &7Lista komend:",
+        "72": "&8» &7/pomoc",
+        "73": "",
+        "74": "&8» &7Informacje o gildiach:",
+        "75": "&8» &7/gildie",
+        "76": "",
+        "77": "&8» &7Spis receptur",
+        "78": "&8» &7/craftingi",
+        "79": ""
+      },
+      "header": "&a&5&lROSE&f&lHC.PL",
+      "footer": "&5&lts.rosehc.pl   &8|   &5&ldc.rosehc.pl   &8|   &5&lfp.rosehc.pl",
+      "updateTime": "30s"
+    }
+  ]
+}
